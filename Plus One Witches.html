@@ -98,7 +98,28 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Plus One Witches" startnode="1" creator="Twine" creator-version="2.3.14" ifid="2BDA1131-1633-46DF-9A92-EDD39A0F5934" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Title" tags="" position="62,551" size="100,100">
+	<tw-storydata name="Plus One Witches" startnode="1" creator="Twine" creator-version="2.3.14" ifid="2BDA1131-1633-46DF-9A92-EDD39A0F5934" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.hide { display: none; }
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">if (document.location.href.toLowerCase().includes("/temp/") || document.location.href.toLowerCase().includes("/private/") || hasOwnProperty.call(window, "storyFormat")) {
+	// Change this to the path where this HTML file is
+	// located if you want to run this from inside Twine.
+	setup.Path = "C:/Users/tyler/Documents/Plus-One-Witches/";  // Running inside Twine application
+} else {
+	setup.Path = "";  // Running in a browser
+}
+setup.ImagePath = setup.Path + "images/";
+setup.SoundPath = setup.Path + "sounds/";
+
+/* Load jQuery UI - Start */
+setup.JSLoaded = false;
+importStyles(setup.Path + "jquery-ui.min.css");
+importScripts(setup.Path + "jquery-ui.min.js")
+	.then(function() {
+		setup.JSLoaded = true;
+	}).catch(function(error) {
+		alert(error);
+	}
+);
+/* Load jQuery UI - End */</script><tw-passagedata pid="1" name="Title" tags="" position="62,551" size="100,100">
 
 [[Continue-&gt;Who are you?]]</tw-passagedata><tw-passagedata pid="2" name="The Break-Up" tags="" position="676,517" size="100,100">It&#39;s mid-afternoon in late May, and you&#39;re sitting in your apartment all alone.
 
@@ -106,7 +127,7 @@ It wasn&#39;t always like this, of course. Just a few days ago, you were dating 
 
 Now, you&#39;re loafing on your sofa, half-watching some reality TV show that nobody wanted and is going to get cancelled halfway through its first season after one of the main actors turns one of the sound staff into a frog. But the cherry on top of this depression sundae is that a few days before you were dumped, you bought tickets to a live concert where the lead act is &lt;&lt;linkreplace &quot;Jimmy John and the Footlongs.&quot; t8n&gt;&gt;Jimmy John and the Footlongs.
 
-//Jimmy John is a band that you and your former SO have had an ironic love of for a while now. The band itself is made up of five guys, none of them named Jimmy John, with bad stubble, acoustic instruments (two acoustic guitars, an upright bass, a drum kit with brushes, and a toy piano,) and a sense of humor that falls on its back more than a hammered soccer/football player trying to get the ref to give the other team penalties. As for their music, it&#39;s not great, not terrible, but they&#39;re adamant about getting into a studio so they can record their songs. Personally, you think they&#39;d sound better if they recorded their music on a laptop mic, but, like the piano guy who actually seems kind of cool, you don&#39;t have much, if any, creative input.//&lt;&lt;/linkreplace&gt;&gt;
+//Jimmy John is a band that you and your former SO have had an ironic love of for a while now. The band itself is made up of five guys, none of them named Jimmy John, with bad stubble, acoustic instruments (two acoustic guitars, an upright bass, a drum kit with brushes, and a toy piano,) and a sense of humor that falls on its back more than a hammered soccer/football player trying to get the ref to give the other team penalties. As for their music, it&#39;s not great, not terrible, but they&#39;re adamant about getting into a studio so they can record their songs. Personally, you think they&#39;d sound better if they recorded their music on a laptop mic, but, like the piano guy who actually seems kind of cool, you don&#39;t much, if any, creative input.//&lt;&lt;/linkreplace&gt;&gt;
 
 You&#39;ve still got those tickets, but you doubt you&#39;re going to use any of them. Yes, you paid for them. Yes, they&#39;re going to waste otherwise. No, there&#39;s no time to scalp them off. But it feels weird using only one of those tickets. Unless you can make a date out of a loneliness-sized container of ice cream, two tickets are going to go unused.
 
@@ -115,7 +136,7 @@ You&#39;ve still got those tickets, but you doubt you&#39;re going to use any of
 
 Ignoring the &quot;what ifs&quot; that briefly pop up in your mind, [[you grab a new trash bag and start stuffing garbage in it.-&gt;Cleaning]]&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="The Eye in the Garbage" tags="" position="1778,485" size="100,100">Staring back at you from between bags of trash and bit of garbage your apartment neighbors rudely failed to bag up is an eye. But not a regular-sized eyeball. This one happens to be about the size of your head and is more aware of its surroundings than your average detached eyeball, as it follows your movements with you hovering over your trash prize. As you briefly start to wonder if purple is a natural eye color, &lt;&lt;linkappend &quot;the eye somehow speaks.&quot; t8n&gt;&gt;
 
-&quot;Hey, [[do you mind getting me out-&gt;Meeting-Tip]] of here? It&#39;s kind of a trash heap.&quot;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Baby Hands" tags="" position="2482,469" size="100,100">Turning back to the trash, &lt;&lt;linkappend &quot;you explain your idea to Tips as you search for the bag you just threw away.&quot;&gt;&gt; After a bit of digging, you manage to find the garbage bag you threw away. You open it up to digging through that trash as well. It only takes you a second to come across some of your ex&#39;s things. \
+&quot;Hey, [[do you mind getting me out-&gt;Meeting-Tip]] of here? It&#39;s kind of a trash heap.&quot;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Baby Hands" tags="" position="2482,468" size="100,100">Turning back to the trash, &lt;&lt;linkappend &quot;you explain your idea to Tips as you search for the bag you just threw away.&quot;&gt;&gt; After a bit of digging, you manage to find the garbage bag you threw away. You open it up to digging through that trash as well. It only takes you a second to come across some of your ex&#39;s things. \
 &lt;&lt;timed 1s t8n&gt;&gt;Some photos, \
 &lt;&lt;timed 1s t8n&gt;&gt;an old t-shirt, \
 &lt;&lt;timed 1s t8n&gt;&gt;a small wooden box with... \
@@ -123,7 +144,7 @@ Ignoring the &quot;what ifs&quot; that briefly pop up in your mind, [[you grab a
 &lt;&lt;/timed&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
 
-&quot;An actual body? Dancing? You&#39;re just spoiling me today! If you were giving me a pair of feet with those hands, I&#39;d think it was Christmas!&quot;</tw-passagedata><tw-passagedata pid="6" name="Thrifty Hand-Me-Downs" tags="" position="2844,448" size="100,100">A few minutes later, you and Tips are standing outside Cheap Casts. Nestled between an &quot;herbal&quot; dispensary and a cheap Italian restaurant, Cheap Casts is a magical thrift shop that often deals in used goods. Given that you live in a less-than-fancy apartment, it&#39;s no surprise that you&#39;ve shopped here more than once. Old books, secondhand clothing, some used alchemy equipment that smelled like dead fish. Those are all things you saw at this place. Something else you&#39;ve seen sold at Cheap Casts are body parts. You&#39;re not too sure how legal that is, but the place hasn&#39;t been closed down in the few years you&#39;ve been going there so it must be okay.
+&quot;An actual body? Dancing? You&#39;re just spoiling me today! If you were giving me a pair of feet with those hands, I&#39;d think it was Christmas!&quot;</tw-passagedata><tw-passagedata pid="6" name="Thrifty Hand-Me-Downs" tags="" position="3224,459" size="100,100">A few minutes later, you and Tips are standing outside Cheap Casts. Nestled between an &quot;herbal&quot; dispensary and a cheap Italian restaurant, Cheap Casts is a magical thrift shop that often deals in used goods. Given that you live in a less-than-fancy apartment, it&#39;s no surprise that you&#39;ve shopped here more than once. Old books, secondhand clothing, some used alchemy equipment that smelled like dead fish. Those are all things you saw at this place. Something else you&#39;ve seen sold at Cheap Casts are body parts. You&#39;re not too sure how legal that is, but the place hasn&#39;t been closed down in the few years you&#39;ve been going there so it must be okay.
 
 As you walk in the store with Tips on your shoulder, the cashier glances up at you from her computer, but doesn&#39;t seem too alarmed by the large eyeball with a baby&#39;s hand on the bottom. She&#39;s probably seen a lot stranger if Tips&#39; appearance isn&#39;t raising any eyebrows from her. Given that she works at a secondhand magic shop, she probably sees plenty of failed experiments.
 
@@ -141,8 +162,36 @@ The concert is starting in an hour!
 
 Looks like you don&#39;t have time to do any more shopping around. You hope Tips can make use of those extra hands!
 
-[[Continue-&gt;Time to Rock!]]</tw-passagedata><tw-passagedata pid="7" name="Look, a Dead Body!" tags="" position="3178,452" size="100,100">[[Continue-&gt;Ending 1]]
-[[Continue-&gt;Alternate Ending?]]</tw-passagedata><tw-passagedata pid="8" name="Ending 1" tags="" position="3378,544" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="Alternate Ending?" tags="" position="3399,391" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="Who are you?" tags="" position="262,557" size="100,100">Before we start the story, we need to establish who we&#39;re going to be looking at. Which of these three wonderful witches really captures your energy? Not in a &quot;magical curse&quot; way, but in a &quot;that&#39;s what I&#39;d look like as a witch&quot; way.
+[[Continue-&gt;Time to Rock!]]
+
+&lt;div class=&quot;draggable ui-widget-content&quot; style=&quot;width: 150px; height: 150px; padding: 0.5em;&quot;&gt;
+    Hand
+&lt;/div&gt;
+   
+&lt;div class=&quot;droppable ui-widget-content&quot; style=&quot;width: 150px; height: 150px; padding: 0.5em;&quot;&gt;
+    &lt;p&gt;Tip eyeball&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-widget-content hide&quot; style=&quot;width: 150px; height: 150px; padding: 0.5em;&quot;&gt;
+    &lt;p&gt;New Tip&lt;/p&gt;
+&lt;/div&gt;
+    
+  &lt;&lt;script&gt;&gt;
+    $(document).one(&quot;:passagerender&quot;, function(event) {
+        // Passage is about to be displayed.
+        
+        // Make &quot;draggable&quot; elements draggable.
+        $(event.content).find(&quot;.draggable&quot;).draggable();
+        
+        // Make &quot;droppable&quot; elements droppable.
+        $(event.content).find(&quot;.droppable&quot;).droppable({
+            drop: function( event, ui ) {
+                Engine.play(&#39;First-Hand-On!&#39;); 
+            }
+        });
+    });
+&lt;&lt;/script&gt;&gt;
+</tw-passagedata><tw-passagedata pid="7" name="Look, a Dead Body!" tags="" position="3558,463" size="100,100">[[Continue-&gt;Ending 1]]
+[[Continue-&gt;Alternate Ending?]]</tw-passagedata><tw-passagedata pid="8" name="Ending 1" tags="" position="3758,555" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="Alternate Ending?" tags="" position="3779,402" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="Who are you?" tags="" position="262,557" size="100,100">Before we start the story, we need to establish who we&#39;re going to be looking at. Which of these three wonderful witches really captures your energy? Not in a &quot;magical curse&quot; way, but in a &quot;that&#39;s what I&#39;d look like as a witch&quot; way.
 
 [[Continue-&gt;Human Option]]
 [[Continue-&gt;Human Option]]
@@ -152,7 +201,7 @@ Looks like you don&#39;t have time to do any more shopping around. You hope Tips
 
 Oh, sorry! I&#39;m thinking too much and getting off track. Let&#39;s get on with the story.
 
-[[Continue-&gt;The Break-Up]]</tw-passagedata><tw-passagedata pid="13" name="Time to Rock!" tags="" position="3007,448" size="100,100">
+[[Continue-&gt;The Break-Up]]</tw-passagedata><tw-passagedata pid="13" name="Time to Rock!" tags="" position="3387,459" size="100,100">
 
 [[Continue-&gt;Look, a Dead Body!]]</tw-passagedata><tw-passagedata pid="14" name="Cleaning" tags="" position="1079,513" size="100,100">&lt;&lt;if $trash1 is 1 &amp;&amp; $trash2 is 1 &amp;&amp; $trash3 is 1 &amp;&amp; $trash4 is 1&gt;&gt;
 &lt;&lt;goto Post-Cleanup&gt;&gt;
@@ -190,7 +239,37 @@ You step back and wait a few seconds...
 &lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Dig-In-Trash" tags="" position="1634,498" size="100,100">[[Finish minigame-&gt;The Eye in the Garbage]]</tw-passagedata><tw-passagedata pid="18" name="Meeting-Tip" tags="" position="1907,483" size="100,100">Figuring that you&#39;ve already half-finished the job, you pick up the eyeball. &lt;&lt;linkappend &quot;Most people would be weirded out with holding an eyeball&quot; t8n&gt;&gt;\
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Dig-In-Trash" tags="" position="1634,498" size="100,100">Wuh... What&#39;s that??? &lt;&lt;set _show to {start: 0, end: 1}&gt;&gt;
+
+&lt;div id=&quot;eyeball&quot; style=&quot;width: 100px; height: 100px; padding: 0.5em;&quot;&gt;
+  Eyeball
+&lt;/div&gt;
+
+&lt;div id=&quot;draggable-1&quot; class=&quot;draggable ui-widget-content&quot; style=&quot;width: 150px; height: 150px; padding: 0.5em; top: -213px; left: -46px;&quot;&gt;
+  Trash
+&lt;/div&gt;
+&lt;div id=&quot;draggable-2&quot; class=&quot;draggable ui-widget-content&quot; style=&quot;width: 150px; height: 150px; padding: 0.5em; top: -335px; left: -15px;&quot;&gt;
+  Trash
+&lt;/div&gt;
+
+
+
+&lt;&lt;script&gt;&gt;
+
+$(document).one(&quot;:passagerender&quot;, function(event) {
+	// Passage is about to be displayed.
+	
+	// Make &quot;draggable&quot; elements draggable.
+	$(event.content).find(&quot;.draggable&quot;).draggable();
+	$(event.content).find(&quot;.droppable&quot;).droppable();  // Make &quot;droppable&quot; elements droppable.
+	
+	$(event.content).on(&#39;click&#39;, &#39;#eyeball&#39;, function(e) {
+	 	 Engine.play(&quot;The Eye in the Garbage&quot;);
+	});
+});
+
+
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Meeting-Tip" tags="" position="1907,483" size="100,100">Figuring that you&#39;ve already half-finished the job, you pick up the eyeball. &lt;&lt;linkappend &quot;Most people would be weirded out with holding an eyeball&quot; t8n&gt;&gt;\
 , especially a large one they found in the garbage and was worryingly dry\
 &lt;&lt;append &quot;#TipGreeting&quot;&gt;&gt;
 [[&#39;&quot;... Excude me?&quot;&#39;-&gt;Meeting-Tip-2]]&lt;&lt;/append&gt;&gt;\
@@ -218,11 +297,41 @@ Great, sounds like a plan! &lt;&lt;linkappend &quot;There&#39;s one thing you wa
 
 Sometime after high school, you decided on a whim to take a class on golems and how to make them. You learned a lot of things you barely remember, but you do remember that flesh is a relatively common material for them. Normally it&#39;s not considered ethical to go digging in a graveyard to grab a headless body for your eyeball date, but you know that discarded hands are fairly common. If you could get a bunch of hands together, &lt;&lt;linkappend &quot;you could probably make something close to limbs for Tips so the two of you could dance and really enjoy the concert.&quot;&gt;&gt;
 
-[[You&#39;re pretty sure that&#39;s how it works.-&gt;Baby Hands]]&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="Baby-Hand-Get" tags="" position="2680,486" size="100,100">Inside the box is a tiny baby hand. You remember back in April when your ex had given it to you. They had been holding onto that hand ever since they outgrew it, and they gave it to you as a sign of how committed they were. And then they left you a couple months later.
+[[You&#39;re pretty sure that&#39;s how it works.-&gt;Baby Hands]]&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="Baby-Hand-Get" tags="" position="2773,477" size="100,100">Inside the box is a tiny baby hand. &lt;&lt;linkappend &quot;You remember back in April when your ex had given it to you.&quot; t8n&gt;&gt; They had been holding onto that hand ever since they outgrew it, and they gave it to you as a sign of how committed they were. And then they left you a couple months later. Which is why you&#39;re using now their baby hand in some very questionable magic.&lt;&lt;/linkappend&gt;&gt;
 
-Which is why you&#39;re using now their baby hand in some very questionable magic.
+You grab the hand from the little box and roll Tips over on their side. With one swift motion, you slap the top side of the hand against the bottom of your eyeball buddy.
 
-You grab the hand from the little box and roll Tips over on their side. With one swift motion, you slap the top side of the hand against the bottom of your eyeball buddy. Despite what most people would expect, the hand seems to be sticking, and the little baby fingers on the hand are also moving. Moment of truth, you think as you put Tips hand-side down and step back.
+&lt;div class=&quot;draggable ui-widget-content&quot; style=&quot;width: 150px; height: 150px; padding: 0.5em;&quot;&gt;
+    Hand
+&lt;/div&gt;
+   
+&lt;div class=&quot;droppable ui-widget-content&quot; style=&quot;width: 150px; height: 150px; padding: 0.5em;&quot;&gt;
+    &lt;p&gt;Tip eyeball&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-widget-content hide&quot; style=&quot;width: 150px; height: 150px; padding: 0.5em;&quot;&gt;
+    &lt;p&gt;New Tip&lt;/p&gt;
+&lt;/div&gt;
+    
+  &lt;&lt;script&gt;&gt;
+    $(document).one(&quot;:passagerender&quot;, function(event) {
+        // Passage is about to be displayed.
+        
+        // Make &quot;draggable&quot; elements draggable.
+        $(event.content).find(&quot;.draggable&quot;).draggable();
+        
+        // Make &quot;droppable&quot; elements droppable.
+        $(event.content).find(&quot;.droppable&quot;).droppable({
+            drop: function( event, ui ) {
+                Engine.play(&#39;First-Hand-On!&#39;); 
+            }
+        });
+    });
+&lt;&lt;/script&gt;&gt;
+</tw-passagedata><tw-passagedata pid="22" name="Testing javascript" tags="" position="2191,149" size="100,100">[[trash digging|Dig-In-Trash]]
+
+[[put on hand|Baby-Hand-Get]]
+
+[[put on hand(s) 2|Thrifty Hand-Me-Downs]]</tw-passagedata><tw-passagedata pid="23" name="First-Hand-On!" tags="" position="2963,475" size="100,100">Despite what most people would expect, the hand seems to be sticking, and the little baby fingers on the hand are also moving. Moment of truth, you think as you put Tips hand-side down and step back.
 
 &quot;This is working out pretty well, I&#39;d say,&quot; Tips remarks as they skitter around on their baby hand &quot;foot&quot; in a way that only slightly reminds you of a b-lister horror movie.
 
