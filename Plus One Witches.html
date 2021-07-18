@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Plus One Witches" startnode="22" creator="Twine" creator-version="2.3.14" ifid="2BDA1131-1633-46DF-9A92-EDD39A0F5934" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.hide { display: none; }
+	<tw-storydata name="Plus One Witches" startnode="1" creator="Twine" creator-version="2.3.14" ifid="2BDA1131-1633-46DF-9A92-EDD39A0F5934" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.hide { display: none; }
 
 #hand {
 	width: 350px; 
@@ -115,6 +115,17 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 .droppable {
 background: transparent;
   border: 0px;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   33% { transform: rotate(-5deg); }
+   66% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.dance {
+  animation: wiggle 1s infinite;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">if (document.location.href.toLowerCase().includes("/temp/") || document.location.href.toLowerCase().includes("/private/") || hasOwnProperty.call(window, "storyFormat")) {
 	// Change this to the path where this HTML file is
 	// located if you want to run this from inside Twine.
@@ -343,7 +354,7 @@ You grab the hand from the little box and roll Tips over on their side. With one
         });
     });
 &lt;&lt;/script&gt;&gt;
-</tw-passagedata><tw-passagedata pid="22" name="Testing javascript" tags="" position="3308,584" size="100,100">[[trash digging|Dig-In-Trash]]
+</tw-passagedata><tw-passagedata pid="22" name="Testing javascript" tags="" position="3309,653" size="100,100">[[trash digging|Dig-In-Trash]]
 
 [[put on hand|Baby-Hand-Get]]
 
@@ -408,7 +419,7 @@ You&#39;d be losing money if you didn&#39;t get the box of hands.
 		}
 	  });
   });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Ritual" tags="" position="4527,931" size="100,100">&lt;&lt;set $hands = 0&gt;&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Ritual" tags="" position="4527,930" size="100,100">&lt;&lt;set $hands = 0&gt;&gt;
 
 &lt;div class=&quot;draggable&quot; id=&quot;hand&quot; style=&quot;left: 470px; top: 157px;&quot;&gt;
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hand.png?raw=true&quot;]]
@@ -430,7 +441,7 @@ You&#39;d be losing money if you didn&#39;t get the box of hands.
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hand.png?raw=true&quot;]]
 &lt;/div&gt;
    
-&lt;div class=&quot;droppable&quot; style=&quot;width: 420px; height: 420px; padding: 0.5em;&quot;&gt;
+&lt;div class=&quot;droppable&quot; style=&quot;width: 380px; height: 376px; padding: 0;&quot;&gt;
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Eyeball.png?raw=true&quot;]]
 &lt;/div&gt;
     
@@ -465,8 +476,11 @@ You&#39;d be losing money if you didn&#39;t get the box of hands.
 5 hands for $6? That&#39;s an insane deal. They aren&#39;t even expired. Well, lets open this box up and slap &#39;em on Tip.
 
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hands box.png?raw=true&quot;][Ritual]]
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Second-Hand-On!" tags="" position="4700,922.6666564941406" size="100,100">[[That&#39;s enough fun, lets go to the concert hall|Time to Rock!]]</tw-passagedata><tw-passagedata pid="30" name="Final Ritual" tags="" position="5319,907.6666564941406" size="100,100">[[do the ritual|All together!]]</tw-passagedata><tw-passagedata pid="31" name="All together!" tags="" position="5520,897.6666564941406" size="100,100">[[lets dance|Lets dance!]]</tw-passagedata><tw-passagedata pid="32" name="Lets dance!" tags="" position="5731,888" size="100,100">[[Done dancing.-&gt;Final dialogue]]
-</tw-passagedata><tw-passagedata pid="33" name="Final dialogue" tags="" position="5939,883" size="100,100">[[Ending 1-&gt;Ending 1]]
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Second-Hand-On!" tags="" position="4700,922" size="100,100">[[That&#39;s enough fun, lets go to the concert hall|Time to Rock!]]</tw-passagedata><tw-passagedata pid="30" name="Final Ritual" tags="" position="5319,907" size="100,100">[[do the ritual|All together!]]</tw-passagedata><tw-passagedata pid="31" name="All together!" tags="" position="5520,897" size="100,100">[[lets dance|Lets dance!]]</tw-passagedata><tw-passagedata pid="32" name="Lets dance!" tags="" position="5731,888" size="100,100">&lt;div class=&quot;dance&quot;&gt;
+[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hand.png?raw=true&quot;]]
+&lt;/div&gt;
+
+[[Done dancing.-&gt;Final dialogue]]</tw-passagedata><tw-passagedata pid="33" name="Final dialogue" tags="" position="5939,883" size="100,100">[[Ending 1-&gt;Ending 1]]
 [[Ending 2-&gt;Alternate Ending?]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
