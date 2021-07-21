@@ -368,7 +368,8 @@ You hand in your tickets, the bouncer doesn&#39;t even bat an eye at your ocular
 	&lt;&lt;goto At-Dumpster&gt;&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Post-Cleanup" tags="" position="2110,849" size="100,100">Alright, all bagged up!
 
-[[Take out the trash.|At-Dumpster]]</tw-passagedata><tw-passagedata pid="14" name="At-Dumpster" tags="" position="2273,988" size="100,100">You&#39;ve made the 5-minute trek to your apartment&#39;s dumpster. Just like you&#39;ve done dozens of times before, you &lt;&lt;linkappend &quot;lift up the cover&quot; t8n&gt;&gt; and &lt;&lt;linkappend &quot;heave your trash bag of trash in with the rest&quot;&gt;&gt;.
+[[Take out the trash.|At-Dumpster]]</tw-passagedata><tw-passagedata pid="14" name="At-Dumpster" tags="" position="2273,988" size="100,100">&lt;&lt;audio ambient volume 1.0 fadeout&gt;&gt;\
+You&#39;ve made the 5-minute trek to your apartment&#39;s dumpster. Just like you&#39;ve done dozens of times before, you &lt;&lt;linkappend &quot;lift up the cover&quot; t8n&gt;&gt; and &lt;&lt;linkappend &quot;heave your trash bag of trash in with the rest&quot;&gt;&gt;.
 
 &lt;&lt;linkappend &quot;But then you hear something &lt;&lt;shake&gt;&gt;rustling within the trash heap.&lt;&lt;/shake&gt;&gt;&quot; t8n&gt;&gt;&lt;&lt;shakescreen 0.2s&gt;&gt;
 
@@ -466,8 +467,7 @@ You breath a deep breath and gently place the home-grown organic hand&#39;s palm
         });
     });
 &lt;&lt;/script&gt;&gt;
-</tw-passagedata><tw-passagedata pid="20" name="First-Hand-On!" tags="" position="3849,961" size="100,100">&lt;&lt;include &quot;ritualmusicstop&quot;&gt;&gt;\
-&lt;&lt;include &quot;apartmentambient&quot;&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="20" name="First-Hand-On!" tags="" position="3850,960" size="100,100">&lt;&lt;include &quot;ritualmusicstop&quot;&gt;&gt;\
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Tips%20with%20one%20hand.png?raw=true&quot;]]
 
 The hand seems to be sticking and the fingers on the hand are also moving. Moment of truth, you think as you put the eye hand-side down and step back.
@@ -743,7 +743,6 @@ That&#39;s... going to be a problem. It&#39;s late afternoon, and commercial fli
 
 [[&#39;[Ask more questions]&#39;|Questions]]
 &lt;&lt;set $whyEye to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="More-Hands!" tags="" position="4284,946" size="100,100">&lt;&lt;audio ritual volume 0.2 fadeout&gt;&gt;\
-&lt;&lt;include &quot;apartmentambient&quot;&gt;&gt;\
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Tips%20w%20many%20hands.png?raw=true&quot;]]
 
 That&#39;s your entire hand collection on the eyeball. Most people would find this macabre, but it&#39;s a little less so for you since you&#39;re the one making this hand-covered eyeball.
@@ -837,9 +836,9 @@ Tips rolls over to the corpse. Looks the body, &lt;&lt;linkappend &quot;then loo
 &lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="That&#39;s enough fun, lets go to the concert hall|" tags="" position="5385,1532" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="58" name="[Feet]" tags="" position="5868,1082" size="100,100">To Tips surprise, you&#39;re the one who brings up feet.
 
-&lt;&lt;timed 0.75s t8n&gt;&gt;&lt;&lt;include &quot;Small-Talk&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Looking" tags="" position="6210.33349609375,1037.6666564941406" size="100,100">, &lt;&lt;linkappend &quot;then looks at the body&quot;&gt;&gt;&lt;&lt;linkappend &quot;, then looks at you&quot;&gt;&gt;&lt;&lt;include &quot;Looking&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="includes" tags="" position="3037.3333740234375,401.3333320617676" size="100,100">&lt;&lt;cacheaudio &quot;dance&quot; &quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/sounds/Lets_Dance.ogg?raw=true&quot;&gt;&gt;\
-&lt;&lt;cacheaudio &quot;ritual&quot; &quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/sounds/1_HANDS.ogg?raw=true&quot;&gt;&gt;\
-&lt;&lt;cacheaudio &quot;preshow&quot; &quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/sounds/pre-show.mp3?raw=true&quot;&gt;&gt;\
+&lt;&lt;timed 0.75s t8n&gt;&gt;&lt;&lt;include &quot;Small-Talk&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Looking" tags="" position="6210.33349609375,1037.6666564941406" size="100,100">, &lt;&lt;linkappend &quot;then looks at the body&quot;&gt;&gt;&lt;&lt;linkappend &quot;, then looks at you&quot;&gt;&gt;&lt;&lt;include &quot;Looking&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="includes" tags="" position="3037.3333740234375,401.3333320617676" size="100,100">&lt;&lt;cacheaudio &quot;dance&quot; &quot;sounds/Lets_Dance.ogg&quot;&gt;&gt;\
+&lt;&lt;cacheaudio &quot;ritual&quot; &quot;sounds/1_HANDS.ogg&quot;&gt;&gt;\
+&lt;&lt;cacheaudio &quot;preshow&quot; &quot;sounds/pre-show.mp3&quot;&gt;&gt;\
 &lt;&lt;cacheaudio &quot;ambient&quot; &quot;sounds/apartment-ambient.ogg&quot;&gt;&gt;\</tw-passagedata><tw-passagedata pid="61" name="ritualmusic" tags="" position="3706.33349609375,806.6666717529297" size="100,100">&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;\
 &lt;&lt;audio ritual loop play&gt;&gt;\
 &lt;&lt;audio ritual volume 0 fadein&gt;&gt;\</tw-passagedata><tw-passagedata pid="62" name="ritualmusicstop" tags="" position="3905,798.6666564941406" size="100,100">&lt;&lt;audio ritual volume 0.2 fadeout&gt;&gt;\</tw-passagedata><tw-passagedata pid="63" name="preshowmusic" tags="" position="6438,645" size="100,100">&lt;&lt;audio preshow loop play&gt;&gt;\
