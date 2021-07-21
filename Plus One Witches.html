@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Plus One Witches Final Script 2 (in progress)" startnode="5" creator="Twine" creator-version="2.3.14" ifid="2BDA1131-1633-46DF-9A92-EDD39A0F5934" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+	<tw-storydata name="Plus One Witches Final Script 2 (in progress)" startnode="56" creator="Twine" creator-version="2.3.14" ifid="2BDA1131-1633-46DF-9A92-EDD39A0F5934" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 
 .actions {
 	list-style-type: none;
@@ -169,7 +169,91 @@ background: transparent;
   	background-position: center;
   	background-size: auto;
   	height: 800px;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">if (document.location.href.toLowerCase().includes("/temp/") || document.location.href.toLowerCase().includes("/private/") || hasOwnProperty.call(window, "storyFormat")) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Shaking css*/
+
+/*! <<shake>> macro set for SugarCube 2.x */
+@-webkit-keyframes shakeanim {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+@-o-keyframes shakeanim {
+	0% { -o-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -o-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -o-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -o-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -o-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -o-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -o-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -o-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -o-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -o-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -o-transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes shakeanim {
+	0% { transform: translate(2px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(0px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(2px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(2px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.shake-block,
+.shake {
+	-webkit-animation-duration: 0.8s;
+	     -o-animation-duration: 0.8s;
+	        animation-duration: 0.8s;
+	-webkit-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-name: shakeanim;
+	     -o-animation-name: shakeanim;
+	        animation-name: shakeanim;
+	-webkit-animation-timing-function: linear;
+	     -o-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-transform-origin: 50% 50%;
+	    -ms-transform-origin: 50% 50%;
+	     -o-transform-origin: 50% 50%;
+	        transform-origin: 50% 50%;
+}
+.shake-block {
+	display: block;
+}
+.shake {
+	display: inline-block;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">if (document.location.href.toLowerCase().includes("/temp/") || document.location.href.toLowerCase().includes("/private/") || hasOwnProperty.call(window, "storyFormat")) {
 	// Change this to the path where this HTML file is
 	// located if you want to run this from inside Twine.
 	setup.Path = "C:/Users/tyler/Documents/Plus-One-Witches/";  // Running inside Twine application
@@ -189,9 +273,28 @@ importScripts(setup.Path + "jquery-ui.min.js")
 		alert(error);
 	}
 );
-/* Load jQuery UI - End */</script><tw-passagedata pid="1" name="Title" tags="" position="933,1055" size="100,100">===START
+/* Load jQuery UI - End */
 
-[[Continue-&gt;Who are you?]]</tw-passagedata><tw-passagedata pid="2" name="The Break-Up" tags="" position="1528,995" size="100,100">[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/dirty-apartment.jpeg?raw=true&quot;]]
+
+
+
+// type-sim.min.js, for SugarCube 2, by Chapel
+// v2.0.0, 2021-04-20, 53d1a20e9321b3782a303cf7dbe00f5c51e947db
+;!function(){"use strict";Macro.add("typesim",{tags:null,handler:function(){if(!this.args.length||!this.args[0]||"string"!=typeof this.args[0])return this.error("no text to type out was provided");var t,e=$(document.createElement("span")).addClass("macro"+this.name),n=$(document.createElement("div"));this.payload[0].contents&&this.payload[0].contents.trim()&&(t=this.payload[0].contents),function(t,e,n){if(t&&"string"==typeof t){!e||e instanceof $||(e=$(e));var i=0,s=t.split(""),a=[],o=$(document.createElement("textarea")).addClass("type-sim").on("input.type-sim",(function(){var e=$(this);i=a.push(s[i]),e.val(a.join("")),t.length===a.length&&(e.off("input.type-sim").ariaDisabled(!0),n&&"function"==typeof n&&n(a.join("")),$(document).trigger({type:":type-sim-end",message:a.join("")}))}));e&&e[0]&&e.append(o)}}(this.args[0],e,(function(){n.wiki(t)})),e.append(n).appendTo($(this.output))}})}();
+// end type-sim.min.js
+
+
+
+
+//shake
+/*! <<shake>> macro set for SugarCube 2.x */
+!function(){"use strict";if("undefined"==typeof version||"undefined"==typeof version.title||"SugarCube"!==version.title||"undefined"==typeof version.major||version.major<2||"undefined"==typeof version.minor||version.minor<5)throw new Error("<<shake>> macro requires SugarCube 2.5.0 or greater, aborting load");Macro.add("shake",{tags:null,handler:function(){var duration=this.args.length>0?this.args[0]:1/0,shakeClass="shake";if(1/0!==duration)try{duration=Math.max(Engine.minDomActionDelay,Util.fromCssTime(duration))}catch(e){return this.error(e.message)}Config.debug&&this.debugView.modes({block:!0});var $wrapper=jQuery(document.createElement("span"));$wrapper.addClass("macro-"+this.name+" "+shakeClass).wiki(this.payload[0].contents).appendTo(this.output),1/0!==duration&&setTimeout(function(){$wrapper.removeClass(shakeClass)},Engine.minDomActionDelay+duration)}}),Macro.add(["shakescreen","shaketarget"],{handler:function(){var $targets,duration,shakeClass;if("shakescreen"===this.name)$targets=jQuery("#passages"),duration=this.args.length>0?this.args[0]:1/0,shakeClass="shake-block";else{if(0===this.args.length)return this.error("no selector specified");if($targets=jQuery(this.args[0]),0===$targets.length)return this.error('no elements matched the selector "'+this.args[0]+'"');duration=this.args.length>1?this.args[1]:1/0,shakeClass="block"===jQuery($targets[0]).css("display")?"shake-block":"shake"}if("stop"===duration)return void $targets.removeClass(shakeClass);if(1/0!==duration)try{duration=Math.max(Engine.minDomActionDelay,Util.fromCssTime(duration))}catch(e){return this.error(e.message)}$targets.addClass(shakeClass),1/0!==duration&&setTimeout(function(){$targets.removeClass(shakeClass)},Engine.minDomActionDelay+duration)}})}();
+</script><tw-passagedata pid="1" name="Title" tags="" position="960,912" size="100,100">&lt;&lt;include &quot;includes&quot;&gt;&gt;\
+\
+START
+
+[[Continue-&gt;Who are you?]]</tw-passagedata><tw-passagedata pid="2" name="The Break-Up" tags="" position="1528,995" size="100,100">&lt;&lt;include &quot;apartmentambient&quot;&gt;&gt;\
+[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/dirty-apartment.jpeg?raw=true&quot;]]
 
 It&#39;s mid-afternoon in late May, and you&#39;re sitting in your apartment all alone.
 
@@ -199,38 +302,40 @@ It&#39;s mid-afternoon in late May, and you&#39;re sitting in your apartment all
 
 &lt;&lt;linkreplace &quot;You&#39;re lonely.&quot; t8n&gt;&gt;Since the breakup you&#39;ve felt dejected and hollow. You&#39;ve unsuccessfully tried filling that hollow feeling with snacks. The trash is piling up. Chip bags, empty ice cream cartons, that one experiment where you tried making a new lover out of scrap metal and a poor understanding of programming.&lt;&lt;/linkreplace&gt;&gt;
 
-[[Eat more junk food.-&gt;Junk food]]
-[[Take out the trash.-&gt;Taking Out the Trash]]
+[[&#39;[Eat more junk food]&#39;-&gt;Junk food]]
+[[&#39;[Take out the trash]&#39;-&gt;Taking Out the Trash]]
 &lt;&lt;set $trash to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Taking Out the Trash" tags="" position="1718,996" size="100,100">It takes all of your effort, but you push through and lift yourself off the couch. As you get to your feet, your fatigue fades almost instantly. Why do you become so lethargic when you&#39;re sad? If you weren&#39;t like this &lt;&lt;linkreplace &quot;you&#39;d probably have a doctorate and be living in a nice house instead of being alone in your apartment.&quot; t8n&gt;&gt;==you&#39;d probably have a doctorate and be living in a nice house instead of being alone in your apartment.==
 
+	Ignoring the &quot;what ifs&quot; that briefly pop up in your mind, you push yourself towards trash picking up action.
+	
 &lt;&lt;if $trash is 1&gt;&gt;
-	Ignoring the &quot;what ifs&quot; that briefly pop up in your mind, [[you grab a new trash bag and begin stuffing.-&gt;Cleaning]]
+	[[&#39;[Grab a new trash bag and begin stuffing]&#39;-&gt;Cleaning]]
 &lt;&lt;else&gt;&gt;
-	Ignoring the &quot;what ifs&quot; that briefly pop up in your mind, [[you grab a new trash-bag-of-holding for the mountains of trash and begin stuffing.-&gt;Cleaning]]
+	[[&#39;[Grab a new trash-bag-of-holding for the mountains of trash and begin stuffing]&#39;-&gt;Cleaning]]
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="The Eye in the Garbage" tags="" position="2624,970" size="100,100">[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Eyeball.png?raw=true&quot;]]
 
-Staring back at you from between bags of trash and bit of garbage your apartment neighbors rudely failed to bag up is an eye. But not a regular-sized eyeball. This one happens to be about the size of your head and is more aware of its surroundings than your average detached eyeball, as it follows your movements with you hovering over your trash prize. As you briefly start to wonder if purple is a natural eye color, &lt;&lt;linkappend &quot;the eye wiggles.&quot; t8n&gt;&gt;
+Staring back at you from between bags of trash and bit of garbage your apartment neighbors rudely failed to bag up is an eye. 
+
+This eyeball is the size of your head and seems more aware of its surroundings than your average detached dumpster eyeball. It follows your movements with you hovering over your trash prize. As you briefly start to wonder if purple is a natural eye color, &lt;&lt;linkappend &quot;&lt;&lt;shake&gt;&gt;the eye wiggles.&lt;&lt;/shake&gt;&gt;&quot; t8n&gt;&gt;
 
 ... It looks like it needs help.
 
 [[Help the poor dumpster eyeball out.-&gt;Meeting-Tip]]&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Baby Hands" tags="" position="3332,947" size="100,100">Turning back to the trash, you &lt;&lt;linkappend &quot;explain your idea&quot;&gt;&gt; (can this eyeball understand you?)&lt;&lt;/linkappend&gt;&gt; as you &lt;&lt;linkappend &quot;search for the bag you just threw away.&quot;&gt;&gt; You dig through the trash you&#39;d just brought out. 
 
-&lt;&lt;timed 2s t8n&gt;&gt;Some photos, \
+&lt;&lt;timed 1s t8n&gt;&gt;Some photos, \
 &lt;&lt;timed 0.5s t8n&gt;&gt;lots of snacks, \
 &lt;&lt;timed 0.5s t8n&gt;&gt;empty ice-cream cartons, \
 &lt;&lt;timed 0.5s t8n&gt;&gt;an old t-shirt, \
 &lt;&lt;timed 0.5s t8n&gt;&gt;a garden pot with... \
-&lt;&lt;timed 1.5s t8n&gt;&gt;[[There&#39;s one.-&gt;Baby-Hand-Get]]\
+&lt;&lt;timed 1.5s t8n&gt;&gt;[[&#39;[your home grown hand!]&#39;-&gt;Baby-Hand-Get]]\
 &lt;&lt;/timed&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
 </tw-passagedata><tw-passagedata pid="6" name="Thrifty Hand-Me-Downs" tags="" position="3622,1205" size="100,100">A few minutes later, you and Tips are standing outside Cheap Casts. Nestled between an &quot;herbal&quot; dispensary and a cheap &quot;Italian&quot; restaurant.
 
 As you walk in the store with Tips on your shoulder, &lt;&lt;linkappend &quot;the cashier glances up at you from her computer&quot; t8n&gt;&gt;, but doesn&#39;t seem too alarmed by the large eyeball with a baby&#39;s hand on the bottom. She&#39;s probably seen a lot stranger if Tips&#39; appearance isn&#39;t raising any eyebrows from her. Given that she works at a secondhand magic shop, she probably sees plenty of failed experiments&lt;&lt;/linkappend&gt;&gt;.
 
-You ask the cashier where you can find &lt;&lt;linkappend &quot;the spare body parts&quot; t8n&gt;&gt; and she wordlessly points you to the [[back of the store|Back of store]]&lt;&lt;/linkappend&gt;&gt;.</tw-passagedata><tw-passagedata pid="7" name="Look, a Dead Body!" tags="" position="6274,880" size="100,100">Suddenly, you hear a loud explosion come from the mosh pit as the body of an unlucky attendee flies out of the crowd and lands at your feet. You&#39;re no doctor, but it looks like whatever magic was being thrown around messed this guy up pretty bad. He&#39;s missing both his arms and his head! Other than that, this guy is relatively intact. And his clothing, a purple jacket with matching purple jeans, are in good condition.
-
-It looks like you&#39;re going to be finding that body for Tips after all.
+You ask the cashier where you can find &lt;&lt;linkappend &quot;the spare body parts&quot; t8n&gt;&gt; and she wordlessly points you to the [[back of the store|Back of store]]&lt;&lt;/linkappend&gt;&gt;.</tw-passagedata><tw-passagedata pid="7" name="Look, a Dead Body!" tags="" position="6540,1400" size="100,100">It looks like you&#39;re going to be finding that body for Tips after all.
 
 You take Tips and the body to the restroom where you can finish fixing them up without too many people watching you. It&#39;s pretty empty right now, except for one person who leaves quickly while trying not to look too curious about what you&#39;ve brought with you. Now all that&#39;s left is for one bit of magic.
 
@@ -238,51 +343,45 @@ You take Tips and the body to the restroom where you can finish fixing them up w
 
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/characters.jpeg?raw=true&quot;]]
 
-&lt;h3&gt;[[Left-&gt;Human Option]], [[Center-&gt;Human2 Option]], or [[Fish-&gt;Fishy Option]]?&lt;/h3&gt;</tw-passagedata><tw-passagedata pid="9" name="Human Option" tags="" position="1331,849" size="100,100">&lt;img src=&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Dancing%20avatar%201.png?raw=true&quot;&gt;
+&lt;h3&gt;[[&#39;[Left]&#39;-&gt;Human Option]], [[&#39;[Center]&#39;-&gt;Human2 Option]], or [[&#39;[Fish]&#39;-&gt;Fishy Option]]?&lt;/h3&gt;</tw-passagedata><tw-passagedata pid="9" name="Human Option" tags="" position="1331,849" size="100,100">&lt;img src=&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Dancing%20avatar%201.png?raw=true&quot;&gt;
 That one? Yeah, that does certainly feel &quot;you.&quot; With that out of the way, let&#39;s get on with the story.&lt;&lt;set $character to 1&gt;&gt;
 
-Let&#39;s get on with [[the story-&gt;The Break-Up]].</tw-passagedata><tw-passagedata pid="10" name="Fishy Option" tags="" position="1333,1103" size="100,100">&lt;img src=&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Dancing%20avatar%203.png?raw=true&quot;&gt;
+[[&#39;[Let&#39;s get on with the story]&#39;-&gt;The Break-Up]].</tw-passagedata><tw-passagedata pid="10" name="Fishy Option" tags="" position="1333,1103" size="100,100">&lt;img src=&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Dancing%20avatar%203.png?raw=true&quot;&gt;
 &lt;&lt;set $character to 3&gt;&gt;Ooh, you&#39;re going with the fish person? It&#39;s always good to see someone&#39;s a fan of the fishy folk.
 
-Anyway, let&#39;s get on with [[the story-&gt;The Break-Up]].</tw-passagedata><tw-passagedata pid="11" name="Time to Rock!" tags="" position="5755,895" size="100,100">At last, you&#39;re standing in line with your date for the big Jimmy John and the Footlongs concert. The concert hall isn&#39;t one of those big kinds where the biggest names play their tunes, but you imagine it&#39;s a step up from playing in some seedy bar. Your fellow concert-goer isn&#39;t quite the person you expected to be with, but you&#39;re still pumped to be going with someone.
+Anyway, [[&#39;[Let&#39;s get on with the story]&#39;-&gt;The Break-Up]].</tw-passagedata><tw-passagedata pid="11" name="Time to Rock!" tags="" position="5755,895" size="100,100">&lt;&lt;include &quot;preshowmusic&quot;&gt;&gt;\
+You hop in line with your new friend for the big Jimmy John and the Footlongs concert. The concert hall isn&#39;t one of those big kinds where the biggest names play their tunes, but you imagine it&#39;s a step up from playing in some seedy bar. Tips far from the person you expected to be with, but you&#39;re still pumped to be going with someone.
 
-Speaking of Tips, they&#39;re working with the extra hands to the best of their ability. As they are right now, their eye is serving as the torso/head and segments of hands clasped together act as the limbs. The best part about using garden-grown hands is that they&#39;re in mint condition. That means no wood shop teacher hands, no tiny hands, and certainly no hands owned by the kind of folks who like mixing alcohol with fireworks.
+Speaking of Tips, &lt;&lt;linkappend &quot;they&#39;re working with the extra hands to the best of their ability.&quot;&gt;&gt; As they are right now, their eye is serving as the torso/head and segments of hands clasped together act as the limbs. The best part about using garden-grown hands is that they&#39;re in mint condition. That means no wood shop teacher hands, no tiny hands, and certainly no hands owned by the kind of folks who like mixing alcohol with fireworks.&lt;&lt;/linkappend&gt;&gt;
 
-When you get to the end of the line and hand in your tickets, the guy who takes your tickets doesn&#39;t seem too suspicious about your claim that the second ticket is for Tips. He also doesn&#39;t seem too concerned about your ocular friend. &quot;You gonna try and get that thing signed by the band?&quot; he jokes.
+You hand in your tickets, the bouncer doesn&#39;t even bat an eye at your ocular friend. &quot;You gonna try and get that thing signed by the band?&quot; he jokes.
 
-As you and Tips wait for the music to start, the two of you start talking about your interests. Other music bands, your magical misdeeds, feet. No surprise as to who brought up that last one. You&#39;re pretty excited for the music to start, and so are some of the other folks. They&#39;ve already started a mosh pit, and some of those moshers are throwing around a bit of magic at each other.
-
-[[&#39;&#39;BOOM&#39;&#39;-&gt;Look, a Dead Body!]]</tw-passagedata><tw-passagedata pid="12" name="Cleaning" tags="" position="1930,991" size="100,100">You&#39;ve picked up most of the trash, but there&#39;s some left.
+&lt;&lt;include &quot;Small-Talk&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Cleaning" tags="" position="1930,989" size="100,100">You&#39;ve picked up most of the trash, but there&#39;s some left.
 
 &lt;&lt;nobr&gt;&gt;
   &lt;&lt;if $trash1 is 1 &amp;&amp; $trash2 is 1&gt;&gt;
-  [[Screw this, I&#39;ve picked up enough.|At-Dumpster]]
+  [[&quot;\[Good enough, done!\]&quot;|At-Dumpster]]
   &lt;&lt;/if&gt;&gt;
-  &lt;&lt;actions &quot;You and your ex&#39;s hand-army&quot; &quot;2 Tickets for the Jimmy John and the Footlongs concert tonight&quot; &quot;Mostly-uneaten-but-melted carton of Cranberry Catastrophe ice cream&quot;&gt;&gt;
+  &lt;&lt;actions &#39;[You and your ex\&#39;s hand-army]&#39; &#39;[2 Tickets for the Jimmy John and the Footlongs concert tonight]&#39; &#39;[Mostly-uneaten-but-melted carton of Cranberry Catastrophe ice cream]&#39;&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
 &lt;&lt;if $trash1 is 1 &amp;&amp; $trash2 is 1 &amp;&amp; $trash3 is 1&gt;&gt;
 	&lt;&lt;goto At-Dumpster&gt;&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Post-Cleanup" tags="" position="2110,849" size="100,100">Alright, all bagged up!
 
-[[Take out the trash.|At-Dumpster]]</tw-passagedata><tw-passagedata pid="14" name="At-Dumpster" tags="" position="2273,988" size="100,100">You&#39;ve made the 5-minute trek to your apartment&#39;s dumpster. Just like you&#39;ve done dozens of times before, you &lt;&lt;linkappend &quot;lift up the cover&quot; t8n&gt;&gt; and, just like you&#39;ve done dozens of times before, &lt;&lt;linkappend &quot;heave your trash bag of trash in with the rest&quot;&gt;&gt;.
+[[Take out the trash.|At-Dumpster]]</tw-passagedata><tw-passagedata pid="14" name="At-Dumpster" tags="" position="2273,988" size="100,100">You&#39;ve made the 5-minute trek to your apartment&#39;s dumpster. Just like you&#39;ve done dozens of times before, you &lt;&lt;linkappend &quot;lift up the cover&quot; t8n&gt;&gt; and &lt;&lt;linkappend &quot;heave your trash bag of trash in with the rest&quot;&gt;&gt;.
 
-&lt;&lt;linkappend &quot;And then you hear something rustling within the trash heap.&quot; t8n&gt;&gt;
+&lt;&lt;linkappend &quot;But then you hear something &lt;&lt;shake&gt;&gt;rustling within the trash heap.&lt;&lt;/shake&gt;&gt;&quot; t8n&gt;&gt;&lt;&lt;shakescreen 0.2s&gt;&gt;
 
-&lt;&lt;linkappend &quot;That is not something that&#39;s ever happened any of those dozens of times before.&quot; t8n&gt;&gt;
+You step back and wait a few seconds... &lt;&lt;timed 4s t8n&gt;&gt;
 
-You step back and wait a few seconds... 
-&lt;&lt;timed 4s t8n&gt;&gt;But, nothing else happens.
+It sounds small, maybe it&#39;s a critter? Your first thought is to just forget about this and head back to your apartment, but it&#39;s not like you have anything better to do for the rest of the day. And besides, it wouldn&#39;t be much of a story if you decided to just ignore the hook, don&#39;t you think?
 
-&lt;&lt;timed 2s t8n&gt;&gt;It probably isn&#39;t somebody sleeping in the dumpster who was awoken by your trashy deposit. Your first thought is to just forget about this and head back to your apartment, &lt;&lt;linkappend &quot;but it&#39;s not like you have anything better to do for the rest of the day.&quot; t8n&gt;&gt;
-
-[[And besides, it wouldn&#39;t be much of a story if you decided to just ignore the hook, don&#39;t you think?-&gt;Dig-In-Trash]]
-&lt;&lt;/linkappend&gt;&gt;
-&lt;&lt;/timed&gt;&gt;&lt;&lt;/timed&gt;&gt;
-&lt;&lt;/linkappend&gt;&gt;
+[[&quot;[Investigate to rustling]&quot;-&gt;Dig-In-Trash]]
+&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Dig-In-Trash" tags="" position="2484,977" size="100,100">In the trash... What&#39;s that??? 
-
+Let&#39;s move this trash out of the way and give it a poke.
 
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/tip-intro.jpeg?raw=true&quot;]]
 &lt;&lt;set _show to {start: 0, end: 1}&gt;&gt;
@@ -313,13 +412,16 @@ $(document).one(&quot;:passagerender&quot;, function(event) {
 });
 
 
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Meeting-Tip" tags="" position="2757,960" size="100,100">&lt;&lt;linkappend &quot;Most people would be weirded out with holding an eyeball&quot; t8n&gt;&gt;\
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Meeting-Tip" tags="" position="2756,960" size="100,100">&lt;&lt;linkappend &quot;Most people would be weirded out with holding an eyeball&quot; t8n&gt;&gt;\
 , especially a large one they found in the garbage and was worryingly dry\
 &lt;&lt;/linkappend&gt;&gt;\
 . Good thing you have some experience handling eyeballs from that &lt;&lt;linkappend &quot;potionmaking class you had to take in high school.&quot; t8n&gt;&gt; In all honesty, it still wasn&#39;t as gross as having to dissect a frog in your average biology class.\
 &lt;&lt;/linkappend&gt;&gt;
 
-It... seems sentient. You can&#39;t imagine that a dumpster would be the nicest home for an eyeball.// [[Your apartment, though? That&#39;d be an improvement.|Meeting-Tip-2]]
+It... seems sentient. You can&#39;t imagine that a dumpster would be the nicest home for an eyeball.// Your apartment, though?// That&#39;d be an improvement...
+
+[[&#39;[Help the eyeball out]&#39;|Meeting-Tip-2]]
+[[&#39;[Abandon the eyeball]&#39;|Lost-Puppy]]
 
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $character == null&gt;&gt;&lt;&lt;set $character to 3&gt;&gt;&lt;&lt;/if&gt;&gt;
@@ -338,7 +440,9 @@ Great, sounds like a plan! &lt;&lt;linkappend &quot;There&#39;s one thing you wa
 
 Sometime after high school, you decided on a whim to take a class on golems and how to make them. You learned a lot of things you barely remember, but you do remember that flesh is a relatively common material for them. Normally it&#39;s not considered ethical to go digging in a graveyard to grab a headless body for your eyeball date, but you have a good supply of garden-grown hands. If you could get a bunch of hands together, &lt;&lt;linkappend &quot;you could probably make something close to limbs for Tips so the two of you could dance and really enjoy the concert.&quot;&gt;&gt;
 
-[[YEAH! You need limbs to dance!-&gt;Baby Hands]]&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Baby-Hand-Get" tags="" position="3623,956" size="100,100">You grab the hand from the trash and roll the eye over on their side. With one swift motion, you slap the top side of the hand against the bottom of your eyeball buddy.
+[[YEAH! You need limbs to dance!-&gt;Baby Hands]]&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Baby-Hand-Get" tags="" position="3623,955" size="100,100">&lt;&lt;include &quot;ritualmusic&quot;&gt;&gt;\
+You pull out your phone and play your favorite ritual music.
+You breath a deep breath and gently place the home-grown organic hand&#39;s palm against your eyeball buddy.
 
 &lt;div class=&quot;draggable ui-widget-content&quot; style=&quot;width: 150px; height: 150px; padding: 0.5em; background-color: Transparent; border: none; cursor:pointer; outline:none;&quot;&gt;\
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hand.png?raw=true&quot;]]&lt;/div&gt;
@@ -362,18 +466,20 @@ Sometime after high school, you decided on a whim to take a class on golems and 
         });
     });
 &lt;&lt;/script&gt;&gt;
-</tw-passagedata><tw-passagedata pid="20" name="First-Hand-On!" tags="" position="3850,961" size="100,100">[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Tips%20with%20one%20hand.png?raw=true&quot;]]
+</tw-passagedata><tw-passagedata pid="20" name="First-Hand-On!" tags="" position="3849,961" size="100,100">&lt;&lt;include &quot;ritualmusicstop&quot;&gt;&gt;\
+&lt;&lt;include &quot;apartmentambient&quot;&gt;&gt;\
+[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Tips%20with%20one%20hand.png?raw=true&quot;]]
 
-Despite what most people would expect, the hand seems to be sticking, and the fingers on the hand are also moving. Moment of truth, you think as you put the eye hand-side down and step back.
+The hand seems to be sticking and the fingers on the hand are also moving. Moment of truth, you think as you put the eye hand-side down and step back.
 
-Success! The eye is using their new hand to skitter around, looking somewhat like a creature out of a campy horror movie. It&#39;s certainly a bit odd, but you&#39;ve seen worse. Not to mention you were the one who made this.
+//Success!// The eye is using their new hand to &lt;&lt;shake&gt;&gt;skitter around&lt;&lt;/shake&gt;&gt;, looking somewhat like a creature out of a campy horror movie. It&#39;s certainly a bit odd, but you&#39;ve seen worse. Not to mention you were the one who made this.
 
-[[Maybe adding a few more hands might help.|Ritual]]</tw-passagedata><tw-passagedata pid="21" name="Human2 Option" tags="" position="1332,975" size="100,100">&lt;img src=&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Avatar%20dancing%202.png?raw=true&quot;&gt;
+[[&#39;[Add more hands]&#39;|Ritual]]</tw-passagedata><tw-passagedata pid="21" name="Human2 Option" tags="" position="1332,975" size="100,100">&lt;img src=&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Avatar%20dancing%202.png?raw=true&quot;&gt;
 
 
 How could you say no to that face?
 &lt;&lt;set $character to 2&gt;&gt;
-Let&#39;s get on with [[the story-&gt;The Break-Up]].</tw-passagedata><tw-passagedata pid="22" name="On way to Thrifty Hand-Me-Downs" tags="" position="3479,1214" size="100,100">&lt;&lt;linkappend &quot;Lets go to Cheap Casts™!&quot;&gt;&gt;
+[[&#39;[Let&#39;s get on with the story]&#39;-&gt;The Break-Up]].</tw-passagedata><tw-passagedata pid="22" name="On way to Thrifty Hand-Me-Downs" tags="" position="3479,1214" size="100,100">&lt;&lt;linkappend &quot;Lets go to Cheap Casts™!&quot;&gt;&gt;
 
 &lt;&lt;linkappend &quot;- Old books&quot;&gt;&gt; 
 &lt;&lt;linkappend &quot;- Secondhand clothing&quot;&gt;&gt; 
@@ -424,25 +530,28 @@ You&#39;d be losing money if you didn&#39;t get the box of hands.
 		}
 	  });
   });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="Ritual" tags="" position="4114,949" size="100,100">&lt;&lt;set $hands = 0&gt;&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="Ritual" tags="" position="4113,947" size="100,100">&lt;&lt;set $hands = 0&gt;&gt;\
+&lt;&lt;include &quot;ritualmusic&quot;&gt;&gt;\
+You pull out your phone and play your favorite ritual music.
+You breath a deep breath and start slapping all your remaining hands on the eyeball... 
 
-&lt;div class=&quot;draggable&quot; id=&quot;hand&quot; style=&quot;left: 470px; top: 157px;&quot;&gt;
+&lt;div class=&quot;draggable&quot; id=&quot;hand&quot; style=&quot;left: 10%; top: 157px;&quot;&gt;
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hand.png?raw=true&quot;]]
 &lt;/div&gt;
 
-&lt;div class=&quot;draggable&quot; id=&quot;hand&quot; style=&quot;left: 756px; top: 86px;&quot;&gt;
+&lt;div class=&quot;draggable&quot; id=&quot;hand&quot; style=&quot;left: 25%; top: 86px;&quot;&gt;
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hand.png?raw=true&quot;]]
 &lt;/div&gt;
 
-&lt;div class=&quot;draggable&quot; id=&quot;hand&quot; style=&quot;left: 1062; top: 68px;&quot;&gt;
+&lt;div class=&quot;draggable&quot; id=&quot;hand&quot; style=&quot;left: 40%; top: 68px;&quot;&gt;
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hand.png?raw=true&quot;]]
 &lt;/div&gt;
 
-&lt;div class=&quot;draggable&quot; id=&quot;hand&quot; style=&quot;left: 1375px; top: 86px;&quot;&gt;
+&lt;div class=&quot;draggable&quot; id=&quot;hand&quot; style=&quot;left: 60%; top: 86px;&quot;&gt;
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hand.png?raw=true&quot;]]
 &lt;/div&gt;
 
-&lt;div class=&quot;draggable&quot; id=&quot;hand&quot; style=&quot;left: 1719px; top: 152px;&quot;&gt;
+&lt;div class=&quot;draggable&quot; id=&quot;hand&quot; style=&quot;left: 80%; top: 152px;&quot;&gt;
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hand.png?raw=true&quot;]]
 &lt;/div&gt;
    
@@ -481,22 +590,32 @@ You&#39;d be losing money if you didn&#39;t get the box of hands.
 5 hands for $6? That&#39;s an insane deal. They aren&#39;t even expired. Well, lets open this box up and slap &#39;em on Tip.
 
 [img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hands box.png?raw=true&quot;][Ritual]]
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Second-Hand-On!" tags="" position="5370,1191" size="100,100">[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Tips%20w%20many%20hands.png?raw=true&quot;]]
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Second-Hand-On!" tags="" position="5385,1382" size="100,100">[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Tips%20w%20many%20hands.png?raw=true&quot;]]
 
-[[That&#39;s enough fun, lets go to the concert hall|Hold hands]]</tw-passagedata><tw-passagedata pid="27" name="Final Ritual" tags="" position="6472,878" size="100,100">[[do the ritual|All together!]]</tw-passagedata><tw-passagedata pid="28" name="All together!" tags="" position="6673,868" size="100,100">[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/tip-complete.png?raw=true&quot;]]
+[[That&#39;s enough fun, lets go to the concert hall|]]</tw-passagedata><tw-passagedata pid="27" name="Final Ritual" tags="" position="6472,878" size="100,100">&lt;&lt;audio ritual loop play&gt;&gt;\
+[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/SummonCircle.png?raw=true&quot;]]
 
-At last, Tips is looking like as close to a humanoid as you can possibly get. Your ocular date is resting where the body&#39;s former head is and, if it weren&#39;t for the open jacket, could pass as being a very bizarre helmet. As for the hands, two of them are still serving as actual hands, but most of them are hidden under the jacket sleeves holding each other to act as arms. The few remainders hang onto their body like some kind of strange magical accessories.
+You pull out your phone and play your favorite ritual music.
+You breath a deep breath and chant the magic words... 
+~~(type in the box to complete the ritual)~~
+
+&lt;&lt;typesim &quot;Wiggity-woggity-woo! \nThese limbs are now on you!&quot;&gt;&gt;[[&#39;[Complete the ritual]&#39;|All together!]]&lt;&lt;/typesim&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="All together!" tags="" position="6673,867" size="100,100">&lt;&lt;include &quot;ritualmusicstop&quot;&gt;&gt;\
+&lt;&lt;include &quot;preshowmusic&quot;&gt;&gt;\
+[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/tip-complete.png?raw=true&quot;]]
+
+At last, Tips is looking like as close to a humanoid as you can possibly get. Your ocular friend is resting where the body&#39;s former head is and, if it weren&#39;t for the open jacket, could pass as being a very bizarre helmet. As for the hands, two of them are still serving as actual hands, but most of them are hidden under the jacket sleeves holding each other to act as arms. The few remainders hang onto their body like some kind of strange magical accessories.
 
 As you look over your handiwork, the two of you hear cheering coming from the main hall. Sounds like the band&#39;s arrived! The two of you rush out just in time to see the band&#39;s lead take center stage and shout into the microphone.
 
-&quot;We are Jimmy John and the Footlongs, and we say the metic system is for nerds! Who&#39;s ready to ROCK!?&quot;
+&quot;We are Jimmy John and the Footlongs, and we say the metric system is for nerds! Who&#39;s ready to ROCK!?&quot;
 
 The crowd gives their cheers, the band begins their &quot;unique&quot; blend of music, and you and Tips...
 
-[[get to dancing|Lets dance!]]</tw-passagedata><tw-passagedata pid="29" name="Lets dance!" tags="" position="6884,854" size="100,100">&lt;&lt;if $character == null&gt;&gt;&lt;&lt;set $character to 3&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;div id =&quot;DanceHall&quot;&gt;
-	&lt;br /&gt;
-	&lt;br /&gt;
-	&lt;br /&gt;
+[[&#39;[Dance]&#39;|Lets dance!]]</tw-passagedata><tw-passagedata pid="29" name="Lets dance!" tags="" position="6884,866" size="100,100">&lt;&lt;audio dance play&gt;&gt;\
+&lt;&lt;if $character == null&gt;&gt;&lt;&lt;set $character to 3&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;div id =&quot;DanceHall&quot;&gt;\
+  &lt;br /&gt;
+  &lt;br /&gt;
+  &lt;br /&gt;
   &lt;div class=&quot;column&quot;&gt;
   &lt;div class=&quot;dance1 floatRight&quot; id =&quot;ProtagDancing&quot;&gt;
 	&lt;&lt;switch $character&gt;&gt;
@@ -513,13 +632,14 @@ The crowd gives their cheers, the band begins their &quot;unique&quot; blend of 
   &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+It&#39;s been an emotional day for both of you, but getting out of your ruts, putting yourself together, and dancing it out has helped a lot.
 
-[[Done dancing.-&gt;Final dialogue]]</tw-passagedata><tw-passagedata pid="30" name="Final dialogue" tags="" position="7092,854" size="100,100">A few hours of music and dancing later, you and Tips are leaving the concert hall. Other concert goers stream by you, occasionally glancing as Tips with looks of confusion at the eyeball-headed person standing among them. As the two of you stop a bit away from the exiting crowd, Tips turns to you.
+&lt;&lt;timed 3s t8n&gt;&gt;[[&#39;[Aw, the show is ending]&#39;|Final dialogue]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Final dialogue" tags="" position="7092,852" size="100,100">A few hours of music and dancing later, you and Tips are leaving the concert hall. Other concert goers stream by you, occasionally glancing as Tips with looks of confusion at the eyeball-headed person standing among them. As the two of you stop a bit away from the exiting crowd, Tips turns to you and hands you a note.
 
-&quot;Hey, this has been a pretty sweet night. It was great being able to get my own pair of feet and getting to hang with someone else. I gotta ask, do you wanna do something like this again sometime?&quot; 
+&lt;span id=&quot;handwriting&quot;&gt;Hey, this has been a pretty sweet night. It was great being able to get my own pair of feet and getting to hang with someone else. Do you wanna do something like this again sometime? As a date?&lt;/span&gt;
 
-[[I&#39;d love to go on another date with you.-&gt;Eye Love You]]
-[[It was fun, but I need some time alone to work on myself.-&gt;Going Solo]]</tw-passagedata><tw-passagedata pid="31" name="Hold hands" tags="" position="5503,910" size="100,100">&lt;&lt;nobr&gt;&gt;
+[[&#39;[I\&#39;d love to go on a more normal date with you]&#39;-&gt;Eye Love You]]
+[[&#39;[I need time alone to piece myself together]&#39;-&gt;Going Solo]]</tw-passagedata><tw-passagedata pid="31" name="Hold hands" tags="" position="5503,909" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $character == null&gt;&gt;&lt;&lt;set $character to 3&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;switch $character&gt;&gt;
   &lt;&lt;case 1&gt;&gt;[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/hand-holding-1.png?raw=true&quot;]]
@@ -532,7 +652,7 @@ The crowd gives their cheers, the band begins their &quot;unique&quot; blend of 
 
 You grab one of Tip&#39;s hands and sweep him off his hand-feet. This is probably the equivalent of an extreme rollercoaster for Tips, but you look back and they&#39;re having a blast.
 
-[[Lets go!!!|Time to Rock!]]</tw-passagedata><tw-passagedata pid="32" name="Testing" tags="" position="3220,399" size="100,100">[[trash digging|Dig-In-Trash]]
+[[&#39;[Lets go!]&#39;|Time to Rock!]]</tw-passagedata><tw-passagedata pid="32" name="Testing" tags="" position="3220,398" size="100,100">[[trash digging|Dig-In-Trash]]
 
 [[put on hand|Baby-Hand-Get]]
 
@@ -540,48 +660,67 @@ You grab one of Tip&#39;s hands and sweep him off his hand-feet. This is probabl
 
 [[Put on hands 2|Ritual]]
 
-[[Dance|Lets dance!]]</tw-passagedata><tw-passagedata pid="33" name="Eye Love You" tags="" position="7308,951" size="100,100">And so, despite your odd first date, the two of you wind up going on a second date. And a third. And so on. Despite being a large eyeball with a thing for feet who rides on someone&#39;s dead body, they manage to be quite a charmer. Sure, you certainly wind up with a few folks who tease or mock you for having a trashy-looking SO when they have something like a hot boyfriend made out of rare alchemical metals and designed to look like a ancient Greek Olympian. But Tips is &#39;&#39;your&#39;&#39; trash, and you wouldn&#39;t want it any other way.
+[[Dance|Lets dance!]]
 
-You especially wouldn&#39;t want it every other way because ten years later, you and Tips wind up becoming joint leaders in your own empire, in the middle of the Pacific Ocean, built upon land raised from the seafloor thanks to plenty of magic. As it turns out, Tips has a real head (well, eye) for politics, to the point where even being known for loving toes did little to stop the two of you from getting the okays to raise the land necessary and make you two the rulers. The world of politics may happen to be even stranger than your eyeball SO.</tw-passagedata><tw-passagedata pid="34" name="Going Solo" tags="" position="7325,804" size="100,100">Tips seemed a little sad to hear that you wouldn&#39;t be having a second outing, but they told you he was appreciative that you wound up giving them a body. Life&#39;s a lot easier when you have a body and hands. With you focusing more on yourself, you wound up turning your attention to bettering yourself, both in terms of loving yourself and in self-improvement. Given the surprising success of Tips&#39; body, you started experimenting more in makeshift bodies and eventually made a name for yourself as one of the world&#39;s more powerful wizards through making golems and similar artificial creatures.
+[[Final Ritual]]
 
-As for Tips, you&#39;re not completely sure what happened to them. You have, however, heard rumors about how astronauts who&#39;ve visited the Moon as part of scientific studies and magical material collection have claimed to see alien life on the planet. The exact details are sketchy, but they all mention that the creature had one large eye for a head and very purple clothing. You sometimes find yourself gazing at the Moon and hoping that they&#39;re living their best life up there.</tw-passagedata><tw-passagedata pid="35" name="Junk food" tags="" position="1462,1177" size="100,100">You eat more junk food and watch more &lt;&lt;linkreplace &quot;reality TV&quot;&gt;&gt;, //the show is called Rich Witches of the 10th Plane and it&#39;s on the verge of being cancelled halfway through its first season after the Brittany (the richest witch) turned one of the sound staff into a frog//&lt;&lt;/linkreplace&gt;&gt;.
+&lt;&lt;include &quot;includes&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Eye Love You" tags="" position="7324,951" size="100,100">And so, despite your odd first date, the two of you wind up going on a second date. And a third. And so on. Despite being a large eyeball with a thing for feet who rides on someone&#39;s dead body, they manage to be quite a charmer. Sure, you certainly wind up with a few folks who tease or mock you for having a trashy-looking SO when they have something like a hot boyfriend made out of rare alchemical metals and designed to look like a ancient Greek Olympian. But Tips is &#39;&#39;your&#39;&#39; trash, and you wouldn&#39;t want it any other way.
+
+You especially wouldn&#39;t want it every other way because ten years later, you and Tips wind up becoming joint leaders in your own empire, ON THE MOON, built upon magic space-rocks. Tips has a real head (well, eye) for space politics, to the point where even the public knowing Tips for loving toes did little to stop the two of you. In the end, dating a sentient eyeball golem was one of the most tame things on your life&#39;s roadmap.
+
+[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/space.png?raw=true&quot;]]
+
+[[&#39;[The End]&#39;|Title][state.restart()]]</tw-passagedata><tw-passagedata pid="34" name="Going Solo" tags="" position="7325,804" size="100,100">Tips seemed a little sad to hear that you wouldn&#39;t be having a second outing, but they told you he would treasure the night with a good friend. Life&#39;s a lot easier when you have a body, hands, and a friend to help you through the hard times. Focusing on yourself, you wound up turning your attention to bettering yourself, both in terms of loving yourself and in self-improvement. Given the surprising success of Tips&#39; body, you started experimenting more in makeshift bodies and eventually made a name for yourself as one of the world&#39;s more powerful wizards through making golems and similar artificial creatures.
+
+As for Tips, you&#39;re not completely sure what happened to them. You have, however, heard rumors about how astronauts who&#39;ve visited the Moon as part of scientific studies and magical material collection have claimed to see alien life on the planet. The exact details are sketchy, but they all mention that the creature had one large eye for a head and very purple clothing. You sometimes find yourself gazing at the Moon and hoping that they&#39;re living their best life up there.
+
+&lt;&lt;switch $character&gt;&gt;
+  &lt;&lt;case 1&gt;&gt;[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Golem%20avatar%201.png?raw=true&quot;]]
+  &lt;&lt;case 2&gt;&gt;[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Golem%20avatar%202.png?raw=true&quot;]]
+  &lt;&lt;case 3&gt;&gt;[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Golem%20avatar%20fish.png?raw=true&quot;]]
+  &lt;&lt;default&gt;&gt;[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Golem%20avatar%20fish.png?raw=true&quot;]]
+&lt;&lt;/switch&gt;&gt;
+
+[[&#39;[The End]&#39;|Title][state.restart()]]</tw-passagedata><tw-passagedata pid="35" name="Junk food" tags="" position="1462,1177" size="100,100">You eat more junk food and watch more &lt;&lt;linkreplace &quot;reality TV&quot;&gt;&gt;, //the show is called Rich Witches of the 10th Plane and it&#39;s on the verge of being cancelled halfway through its first season after the Brittany (the richest witch) turned one of the sound staff into a frog//&lt;&lt;/linkreplace&gt;&gt;.
 
 The trash pile is getting larger.
 
-  [[Eat more junk food.-&gt;Junk Food 2]]
-  [[Take out the large trash pile.-&gt;Taking Out the Trash]]
+  [[&#39;[Eat more junk food]&#39;-&gt;Junk Food 2]]
+  [[&#39;[Take out the large trash pile]&#39;-&gt;Taking Out the Trash]]
   
- &lt;&lt;set $trash to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="You and your ex&#39;s hand-army" tags="" position="1904,1155" size="100,100">Oh, these things. You and your ex had the amazing idea to do a bit of magical gardening to grow a bunch of human hands to use for a wide variety of pranks. The kind that range from the classic (having your hand pop off when you shake hands) to the spooky (recreating B-horror movies with the help of animated hands and your unsuspecting neighbors.) Some of those pranks would definitely get into the morbid territory, but that&#39;s what makes them so hilarious.
+ &lt;&lt;set $trash to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="[You and your ex&#39;s hand-army]" tags="" position="1904,1155" size="100,100">[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Hand%20pot%20with%20sprouts.png?raw=true&quot;]]
 
-[[Alright, let&#39;s get The rest|Cleaning]]
-&lt;&lt;set $trash1 to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="2 Tickets for the Jimmy John and the Footlongs concert tonight" tags="" position="2054,1154" size="100,100">The concert tickets. A gift your ex gave you shortly before your breakup. They hurt to look at, they remind you of that beautiful Witch.
+Oh, these things. You and your ex had the amazing idea to do a bit of magical gardening to grow a bunch of human hands to use for a wide variety of pranks. The kind that range from the classic (having your hand pop off when you shake hands) to the spooky (recreating B-horror movies with the help of animated hands and your unsuspecting neighbors.) Some of those pranks would definitely get into the morbid territory, but that&#39;s what makes them so hilarious.
+
+[[&#39;[Trash trash trash!]&#39;|Cleaning]]
+&lt;&lt;set $trash1 to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="[2 Tickets for the Jimmy John and the Footlongs concert tonight]" tags="" position="2054,1154" size="100,100">The concert tickets. A gift your ex gave you shortly before your breakup. They hurt to look at, they remind you of that beautiful Witch.
 
 They won&#39;t be getting used tonight... Going alone would be lame. Maybe instead of throwing them away you&#39;ll hang them on your wall like some people do t-shirts. You could start a trend! At least until the tickets remind you of your ex too much and you have to stuff them in a junk drawer.
 
-[[Throw them away.|Cleaning][$ticketsInTrash to 1]]
-[[Keep them.|Cleaning][$ticketsInTrash to 0]]
-&lt;&lt;set $trash2 to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="Mostly-uneaten-but-melted carton of Cranberry Catastrophe ice cream" tags="" position="2203,1158" size="100,100">You tried this out on a whim a couple of days ago. It only took one taste to understand where the &quot;Catastrophe&quot; part came in. Blech.
+[[&#39;[Throw them away]&#39;|Cleaning][$ticketsInTrash to 1]]
+[[&#39;[Keep them]&#39;|Cleaning][$ticketsInTrash to 0]]
+&lt;&lt;set $trash2 to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="[Mostly-uneaten-but-melted carton of Cranberry Catastrophe ice cream]" tags="" position="2203,1158" size="100,100">You tried this out on a whim a couple of days ago. It only took one taste to understand where the &quot;Catastrophe&quot; part came in. Blech.
 
-[[Alright, let&#39;s Get The Rest|Cleaning]]
+[[&#39;[Definitely garbage]&#39;|Cleaning]]
 &lt;&lt;set $trash3 to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="Junk Food 2" tags="" position="1466,1305" size="100,100">The trash pile is so large you can&#39;t see the TV.
 You&#39;ve eaten all of the food in your fridge.
 
-[[Eat more junk food.-&gt;Junk Food 3]]
-[[Take out the trash.-&gt;Taking Out the Trash]]
+[[&#39;[Eat more junk food]&#39;-&gt;Junk Food 3]]
+[[&#39;[Take out the trash]&#39;-&gt;Taking Out the Trash]]
 
  &lt;&lt;set $trash to 2&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="Junk Food 3" tags="" position="1465,1435" size="100,100">[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/freezer-scene-w-spaces.png?raw=true&quot;]]
 
 You&#39;ve made it to the grocery store!
 You empty the shelves and raid someone else&#39;s cart.
 
-[[BUY SNACKS, RUN HOME!-&gt;Junk Food 4]]
+[[&#39;[BUY SNACKS &amp; RUN HOME!]&#39;-&gt;Junk Food 4]]
   
-&lt;&lt;set $trash to 3&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Junk Food 4" tags="" position="1458,1566" size="100,100">The trash pile is so large you can hardly leave your couch.
+&lt;&lt;set $trash to 3&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Junk Food 4" tags="" position="1458,1567" size="100,100">The trash pile is so large you can hardly leave your couch.
 
-&lt;&lt;linkreplace &quot;Eat more junk food&quot; t8n&gt;&gt;Your survival instincts kick in. You can&#39;t reach the kitchen for more snacks. You can&#39;t even leave the house without picking up the trash. THERE IS NO ESCAPE, THERE IS NO SNACK, THERE IS ONLY GARBAGE. IF YOU ARE TO OBTAIN MORE SNACKS, YOU MUST LIVE AND TO LIVE YOU MUST TAKE OUT THE TRASH
+&lt;&lt;linkreplace &#39;[Eat more junk food]&#39; t8n&gt;&gt;Your survival instincts kick in. You can&#39;t reach the kitchen for more snacks. You can&#39;t even leave the house without picking up the trash. THERE IS NO ESCAPE, THERE IS NO SNACK, THERE IS ONLY GARBAGE. IF YOU ARE TO OBTAIN MORE SNACKS, YOU MUST LIVE AND TO LIVE YOU MUST TAKE OUT THE TRASH
 
-&lt;&lt;linkreplace &quot;NO, EAT THE TRASH!&quot;&gt;&gt;You try eating the trash, but you can&#39;t keep it down. It&#39;s not food despite your determination.&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
-[[Take out the trash.-&gt;Taking Out the Trash]]
+&lt;&lt;linkreplace &#39;[NO, EAT THE TRASH!]&#39;&gt;&gt;You try eating the trash, but you can&#39;t keep it down. It&#39;s not food despite your determination.&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
+[[&#39;[Take out the trash]&#39;-&gt;Taking Out the Trash]]
 
    &lt;&lt;set $trash to 4&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Invite" tags="" position="5017,917" size="100,100">You didn&#39;t want to go alone, but now you&#39;ve got someone else with you who&#39;s going to have to deal with some baleful polymorph magic for the rest of their lives. It might be nice to bring them along and see if a concert would cheer them up.
 
@@ -591,25 +730,27 @@ You gently inform Tips the bad news about the (im)possibility of getting to the 
 
 You can tell Tips isn&#39;t excited about losing their body, but you both know there isn&#39;t a chance it this plane&#39;s hell that you&#39;ll make it to the south pole tonight. Luckily he seems to be cheering up a bit.
 
-[[Grab Tip&#39;s hand and sweep them away to the concert.|Hold hands]]</tw-passagedata><tw-passagedata pid="43" name="Question-1" tags="" position="4876,806" size="100,100">&lt;span id=&quot;handwriting&quot;&gt;Nasty breakup. We must be neighbors, because my last fight with my ex resulted in her throwing me out.&lt;/span&gt;
+[[Grab Tip&#39;s hand and sweep them away to the concert|Hold hands]]</tw-passagedata><tw-passagedata pid="43" name="Question-1" tags="" position="4876,806" size="100,100">&lt;span id=&quot;handwriting&quot;&gt;Nasty breakup. My last fight with my ex concluded in her throwing me out.&lt;/span&gt;
 
 That trudges up your own sorrow.
 
 [[&#39;[Ask more questions]&#39;|Questions]]
 &lt;&lt;set $badDay to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="Question-2" tags="" position="4860,950" size="100,100">Tips takes awhile to write this answer...
 
-&lt;span id=&quot;handwriting&quot;&gt;My ex and I had a nasty breakup. They decided it&#39;d be funny to curse me into being an eyeball, which is why we broke up. They stormed out before turning me back. only way to break that curse is to get to the South Pole before midnight.&lt;/span&gt;
+&lt;span id=&quot;handwriting&quot;&gt;My Ex thought it&#39;d be funny to curse me into becoming an eyeball... Which is why we broke up. They kicked me out before turning me back. The only way to break that curse is to get to the South Pole before midnight.&lt;/span&gt;
 
 That&#39;s... going to be a problem. It&#39;s late afternoon, and commercial flights generally don&#39;t make flights to Antarctica. You&#39;re also pretty sure you won&#39;t be able to convince someone to take you there in a supersonic jet. Looks like Tips&#39; ex wins this round.
 
 [[&#39;[Ask more questions]&#39;|Questions]]
-&lt;&lt;set $whyEye to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="More-Hands!" tags="" position="4284,948" size="100,100">[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Tips%20w%20many%20hands.png?raw=true&quot;]]
+&lt;&lt;set $whyEye to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="More-Hands!" tags="" position="4284,946" size="100,100">&lt;&lt;audio ritual volume 0.2 fadeout&gt;&gt;\
+&lt;&lt;include &quot;apartmentambient&quot;&gt;&gt;\
+[img[&quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/images/Tips%20w%20many%20hands.png?raw=true&quot;]]
 
-That&#39;s most of your hand collection on the eyeball. Most people would find this macabre, but it&#39;s a little less so for you since you&#39;re the one making this hand-covered eyeball.
+That&#39;s your entire hand collection on the eyeball. Most people would find this macabre, but it&#39;s a little less so for you since you&#39;re the one making this hand-covered eyeball.
 
 You know, now that your eye buddy has hands now... 
 
-&lt;&lt;linkreplace &quot;[Ask the hand if they can write.]&quot;&gt;&gt;You ask them if they know how to write, and their pupil moves up and down in an approximation of a nod.
+&lt;&lt;linkreplace &quot;[Ask the hand if they can write]&quot;&gt;&gt;You ask them if they know how to write, and their pupil moves up and down in an approximation of a nod.
 
 [[&quot;[Test their handwriting]&quot;|Hand-Writing]]&lt;&lt;/linkreplace&gt;&gt;
 
@@ -620,25 +761,26 @@ for hooking me up with these hands,
 and for the writing utensils!
 The name&#39;s Tips!&quot;&lt;/span&gt;
 
-&lt;&lt;include &quot;Questions&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Questions" tags="" position="4612,914.6666564941406" size="100,100">&lt;&lt;if $toesAddressed is true&gt;&gt;Tips makes overt singular eye contact awaiting more questions.&lt;&lt;else&gt;&gt;Tips peers at your feet nervously awaiting questions.&lt;&lt;/if&gt;&gt;
+&lt;&lt;include &quot;Questions&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Questions" tags="" position="4612,914" size="100,100">&lt;&lt;if $toesAddressed is true&gt;&gt;Tips makes overt singular eye contact awaiting more questions.&lt;&lt;else&gt;&gt;Tips peers at your feet nervously awaiting questions.&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;actions [[&#39;[&quot;What were you doing in the dumpster?&quot;]&#39;|Question-1]] [[&#39;[&quot;Why are you an eyeball?&quot;]&#39;|Question-2]] [[&#39;[&quot;Can you bounce?&quot;]&#39;|Question-3]] [[&#39;[&quot;Did you have fun in the dumpster?&quot;]&#39;|Question-4]] [[&#39;[&quot;Why are you staring at my feet?&quot;]&#39;|Question-5]] &gt;&gt;
-&lt;&lt;if def $whyEye &amp;&amp; def $badDay&gt;&gt;
+&lt;&lt;if def $whyEye&gt;&gt;
 
-Tips may be having an even worse day than you... Maybe you can cheer them up?
+Tips may be having an even worse day than you... &lt;&lt;linkappend &quot;Maybe you can cheer them up?&quot; t8n&gt;&gt; That&#39;s right! Your ex had given you tickets to see Jimmy John and the Footlongs.
 
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;if def $ticketsInTrash &amp;&amp; $ticketsInTrash == 1&gt;&gt;
-	[[&#39;[Dig the tickets out of the trash and invite Tips to the concert.]&#39;|Invite]]
+	[[&#39;[Dig the tickets out of the trash and invite Tips to the concert]&#39;|Invite]]
 &lt;&lt;else&gt;&gt;
-	[[&#39;[Grab the tickets off your counter and invite Tips to the concert.]&#39;|Invite]]
+	[[&#39;[Grab the tickets off your counter and invite Tips to the concert]&#39;|Invite]]
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Question-3" tags="" position="4863,1072.6666564941406" size="100,100">Tips is stunned. After a pause, it looks like they might try!... But Tips chickens out.
+&lt;&lt;/linkappend&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Question-3" tags="" position="4863,1072" size="100,100">Tips is stunned. After a pause, it looks like they might try!... But Tips chickens out.
 
 &lt;span id=&quot;handwriting&quot;&gt;I&#39;m too scared to find out.&lt;/span&gt;
 
-[[&#39;[Ask more questions]&#39;|Questions]]</tw-passagedata><tw-passagedata pid="49" name="Question-4" tags="" position="4878,1200.6666564941406" size="100,100">[[&#39;[Ask more questions]&#39;|Questions]]</tw-passagedata><tw-passagedata pid="50" name="Question-5" tags="" position="4805,1326.6666564941406" size="100,100">Tips finger&#39;s fidget nervously.
+[[&#39;[Ask more questions]&#39;|Questions]]</tw-passagedata><tw-passagedata pid="49" name="Question-4" tags="" position="4878,1200" size="100,100">[[&#39;[Ask more questions]&#39;|Questions]]</tw-passagedata><tw-passagedata pid="50" name="Question-5" tags="" position="4805,1326" size="100,100">Tips finger&#39;s fidget nervously.
 
 &lt;span id=&quot;handwriting&quot;&gt;You have really cute toes. 
 Sorry, I&#39;ll stop staring.&lt;/span&gt;&lt;&lt;set $toesAddressed to true&gt;&gt;
@@ -648,16 +790,61 @@ Ah, so that was intentional... And they weren&#39;t jealous of you appendages ea
 
 [[&#39;[&quot;And you have a very beautiful Iris&quot;]&#39;|Compliment]]
 [[&#39;[&quot;... That&#39;s creepy&quot;]&#39;|Creepy]]
-[[&#39;[Ask more questions]&#39;|Questions]]</tw-passagedata><tw-passagedata pid="51" name="Compliment" tags="" position="4661,1217.6666564941406" size="100,100">Tips iris turns red? I think they&#39;re blushing, even if it looks like they&#39;ve suddenly turned into a demon-garbage-eyeball. Their compliment was sweet and you&#39;re glad you could return the sentiment.
+[[&#39;[Ask more questions]&#39;|Questions]]</tw-passagedata><tw-passagedata pid="51" name="Compliment" tags="" position="4661,1217" size="100,100">Tips iris turns red? I think they&#39;re blushing, even if it looks like they&#39;ve suddenly turned into a demon-garbage-eyeball. Their compliment was sweet and you&#39;re glad you could return the sentiment.
 
 &lt;span id=&quot;handwriting&quot;&gt;Aw, thnx&lt;/span&gt;&lt;&lt;set $toesAddressed to false&gt;&gt;
 
-[[&#39;[Ask more questions]&#39;|Questions]]</tw-passagedata><tw-passagedata pid="52" name="Creepy" tags="" position="4578,1378.6666564941406" size="100,100">&lt;span id=&quot;handwriting&quot;&gt;I&#39;m so sorry. Sincerely.&lt;/span&gt;&lt;&lt;set $toesAddressed to true&gt;&gt;
+[[&#39;[Ask more questions]&#39;|Questions]]</tw-passagedata><tw-passagedata pid="52" name="Creepy" tags="" position="4578,1378" size="100,100">&lt;span id=&quot;handwriting&quot;&gt;I&#39;m so sorry. Sincerely.&lt;/span&gt;&lt;&lt;set $toesAddressed to true&gt;&gt;
 
 [[&#39;[Forgive Tips]&#39;|Questions]]
 
 [[&#39;[Kick Tips out (ends game)]&#39;|Title][state.restart()]]
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="53" name="Lost-Puppy" tags="" position="2756,1110" size="100,100">Heck no! As a witch you work with eyeballs on a daily basis, but a dumpster eyeball? Nope, that&#39;s gross.
+
+&lt;&lt;linkreplace &#39;[Say goodbye]&#39;&gt;&gt;&quot;Glad I could help, good luck lil eyeball!&quot;&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;linkappend &#39;[Walk away]&#39;&gt;&gt;
+
+Well, that was interesting.
+&lt;&lt;timed 1.5s t8n&gt;&gt;Oh goodness, it&#39;s following you. You look back and see the pitiful eyeball rolling it&#39;s eye towards you.
+
+[[&quot;[Ignore the game&#39;s premise and RUN (ends game)]&quot;|Title][state.restart()]]
+[[&quot;[Help the eyeball out]&quot;|Meeting-Tip-2]]
+&lt;&lt;/timed&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="[Music]" tags="" position="5585,1079" size="100,100">Tips knows nothing about Jimmy John and the Footlongs. After you describe their sound Tips is increasingly excited for the show. 
+
+It turns out you have some shared music taste. You both love One Hundreddust, The Smooching Hands, and Hello Whirled. &lt;&lt;set $smalltalk += 1&gt;&gt;
+
+&lt;&lt;timed 0.75s t8n&gt;&gt;&lt;&lt;include &quot;Small-Talk&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="55" name="[Magical misdeeds]" tags="" position="5727,1081" size="100,100">You talk bout your personal cat pocket dimension, that time you did the opposite of curing your IBS, and when you played hide-n-seek with polymorphers.
+
+Tips scrawls down a story of when they accidentally teleported into a vat of queso. They quickly veer away from storytelling towards an empassioned scrawl about attempting interplanetary teleportation.&lt;&lt;set $smalltalk += 1&gt;&gt;
+
+&lt;&lt;timed 0.75s t8n&gt;&gt;&lt;&lt;include &quot;Small-Talk&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Small-Talk" tags="" position="6190,866" size="100,100">&lt;&lt;if def $smalltalk&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $smalltalk to 0&gt;&gt;&lt;&lt;/if&gt;&gt;\
+\
+&lt;&lt;if $smalltalk &lt; 2&gt;&gt;\
+As you and Tips wait for the music to start, you take turns talking and writing about your interests...
+&lt;&lt;actions &#39;[Music]&#39; &#39;[Magical misdeeds]&#39; &#39;[Feet]&#39;&gt;&gt;
+&lt;&lt;else&gt;&gt;\
+You&#39;re pretty excited for the music to start, and so are some of the other folks. Rowdy and inebriated attendees have started moshing and &lt;&lt;linkappend &quot;throwing magic at each other.&quot;&gt;&gt;
+
+&lt;&lt;shake&gt;&gt;BOOM!&lt;&lt;/shake&gt;&gt;&lt;&lt;shakescreen .75s&gt;&gt; 
+
+The body of one of the rowdy attendees flies out of the crowd and lands at your feet. You&#39;re no doctor, but missing both arms and their head is not conductive to living.
+
+Their drivers license slides out of his pocket... They were an organ and limb donor.
+
+Tips rolls over to the corpse. Looks the body, &lt;&lt;linkappend &quot;then looks at you&quot;&gt;&gt;&lt;&lt;include &quot;Looking&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;.
+
+[[&#39;[Ask Tips if they want this body]&#39;-&gt;Final Ritual]]
+&lt;&lt;/linkappend&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="That&#39;s enough fun, lets go to the concert hall|" tags="" position="5385,1532" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="58" name="[Feet]" tags="" position="5868,1082" size="100,100">To Tips surprise, you&#39;re the one who brings up feet.
+
+&lt;&lt;timed 0.75s t8n&gt;&gt;&lt;&lt;include &quot;Small-Talk&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Looking" tags="" position="6210.33349609375,1037.6666564941406" size="100,100">, &lt;&lt;linkappend &quot;then looks at the body&quot;&gt;&gt;&lt;&lt;linkappend &quot;, then looks at you&quot;&gt;&gt;&lt;&lt;include &quot;Looking&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="includes" tags="" position="3037.3333740234375,401.3333320617676" size="100,100">&lt;&lt;cacheaudio &quot;dance&quot; &quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/sounds/Lets_Dance.ogg?raw=true&quot;&gt;&gt;\
+&lt;&lt;cacheaudio &quot;ritual&quot; &quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/sounds/1_HANDS.ogg?raw=true&quot;&gt;&gt;\
+&lt;&lt;cacheaudio &quot;preshow&quot; &quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/sounds/pre-show.mp3?raw=true&quot;&gt;&gt;\
+&lt;&lt;cacheaudio &quot;ambient&quot; &quot;https://github.com/tylertomaseski/Plus-One-Witches/blob/main/sounds/apartment-ambient.ogg?raw=true&quot;&gt;&gt;\</tw-passagedata><tw-passagedata pid="61" name="ritualmusic" tags="" position="3706.33349609375,806.6666717529297" size="100,100">&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;\
+&lt;&lt;audio ritual loop play&gt;&gt;\
+&lt;&lt;audio ritual volume 0 fadein&gt;&gt;\</tw-passagedata><tw-passagedata pid="62" name="ritualmusicstop" tags="" position="3905,798.6666564941406" size="100,100">&lt;&lt;audio ritual volume 0.2 fadeout&gt;&gt;\</tw-passagedata><tw-passagedata pid="63" name="preshowmusic" tags="" position="6438,645" size="100,100">&lt;&lt;audio preshow loop play&gt;&gt;\
+&lt;&lt;audio preshow volume 0 fadein&gt;&gt;\</tw-passagedata><tw-passagedata pid="64" name="apartmentambient" tags="" position="4060,794.6666641235352" size="100,100">&lt;&lt;audio ambient loop play&gt;&gt;\
+&lt;&lt;audio ambient volume 0 fadein&gt;&gt;\</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&null!==n&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",r="\\s"===e?"\\S":e.replace(/^\[/,"[^"),n="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",a=n.replace("\\-",""),i=function(){var e="(?:[\\x2D.0-9A-Z_a-z\\xB7\\xC0-\\xD6\\xD8-\\xF6\\xF8-\\u037D\\u037F-\\u1FFF\\u200C\\u200D\\u203F\\u2040\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD]|[\\uD800-\\uDB7F][\\uDC00-\\uDFFF])";return"[A-Za-z](?:"+e+"*-"+e+"*|[0-9A-Za-z]*)"}(),o=function(){return"("+n+"+)\\(([^\\)\\|\\n]+)\\):|"+t+"*("+n+"+)"+t+"*:([^;\\|\\n]+);|"+t+"*((?:[#.]"+n+"+"+t+"*)+);"}();return Object.freeze({space:e,spaceNoTerminator:t,lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:r,anyChar:"(?:.|[\\n\\r\\u2028\\u2029])",anyLetter:n,anyLetterStrict:a,identifierFirstChar:"[$A-Z_a-z]",identifierNextChar:"[$0-9A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",templateName:"[A-Za-z][\\w-]*",htmlTagName:i,cssIdOrClassSigil:"[#.]",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:o,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,writable:!0,value:function(){function e(){if(null==this)throw new TypeError("Array.prototype.flat called on null or undefined");var t=0===arguments.length?1:Number(arguments[0])||0;return t<1?Array.prototype.slice.call(this):Array.prototype.reduce.call(this,function(r,n){return n instanceof Array?r.push.apply(r,_toConsumableArray(e.call(n,t-1))):r.push(n),r},[])}return e}()}),Array.prototype.flatMap||Object.defineProperty(Array.prototype,"flatMap",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatMap called on null or undefined");return Array.prototype.map.apply(this,arguments).flat()}}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),Object.entries||Object.defineProperty(Object,"entries",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.entries object parameter must be an object");return Object.keys(e).map(function(t){return[t,e[t]]})}}),Object.fromEntries||Object.defineProperty(Object,"fromEntries",{configurable:!0,writable:!0,value:function(e){return Array.from(e).reduce(function(e,t){if(Object(t)!==t)throw new TypeError("Object.fromEntries iterable parameter must yield objects");return t[0]in e?Object.defineProperty(e,t[0],{configurable:!0,enumerable:!0,writable:!0,value:t[1]}):e[t[0]]=t[1],e},{})}}),Object.getOwnPropertyDescriptors||Object.defineProperty(Object,"getOwnPropertyDescriptors",{configurable:!0,writable:!0,value:function(e){if(null==e)throw new TypeError("Object.getOwnPropertyDescriptors object parameter is null or undefined");var t=Object(e);return Reflect.ownKeys(t).reduce(function(e,r){var n=Object.getOwnPropertyDescriptor(t,r);return void 0!==n&&(r in e?Object.defineProperty(e,r,{configurable:!0,enumerable:!0,writable:!0,value:n}):e[r]=n),e},{})}}),Object.values||Object.defineProperty(Object,"values",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.values object parameter must be an object");return Object.keys(e).map(function(t){return e[t]})}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_stringify",{value:JSON.stringify}),Object.defineProperty(JSON,"stringify",{configurable:!0,writable:!0,value:function(e,t,r){return JSON._real_stringify(e,function(e,r){var n=r;if("function"==typeof t)try{n=t(e,n)}catch(e){}return void 0===n&&(n=["(revive:eval)","undefined"]),n},r)}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.flat.call(this,1/0)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Opera:!t&&("object"===_typeof(window.operamini)||e.includes("opera mini")),Windows:t||/iemobile|wpdesktop/.test(e),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Opera||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),r=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),n=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),a=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}(),i=function(){try{return"ontouchstart"in window||!!window.DocumentTouch&&document instanceof window.DocumentTouch||!!navigator.maxTouchPoints||!!navigator.msMaxTouchPoints}catch(e){}return!1}(),o=function(){try{for(var e=new Map([["transition","transitionend"],["MSTransition","msTransitionEnd"],["WebkitTransition","webkitTransitionEnd"],["MozTransition","transitionend"]]),t=[].concat(_toConsumableArray(e.keys())),r=document.createElement("div"),n=0;n<t.length;++n)if(r.style[t[n]]!==undefined)return e.get(t[n])}catch(e){}return!1}();return Object.freeze({audio:e,fileAPI:t,geolocation:r,mutationObserver:n,performance:a,touch:i,transitionEndEvent:o})}(),Visibility=function(){function e(){return a}function t(){return a&&document[a.stateProperty]||"visible"}function r(){return Boolean(a)}function n(){return Boolean(a&&document[a.hiddenProperty])}var a=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return undefined}();return Object.freeze(Object.defineProperties({},{vendor:{get:e},state:{get:t},isEnabled:{value:r},isHidden:{value:n},hiddenProperty:{value:a&&a.hiddenProperty},stateProperty:{value:a&&a.stateProperty},changeEvent:{value:a&&a.changeEvent}}))}(),Fullscreen=function(){function e(e){var t=e||document.documentElement;return t===document.documentElement&&("msRequestFullscreen"===f.requestFn||Browser.isOpera&&Browser.operaVersion<15)&&(t=document.body),t}function t(){return f}function r(){return(f||null)&&document[f.element]}function n(){return Boolean(f&&document[f.isEnabled])}function a(){return Boolean(f&&document[f.element])}function i(t,r){var n=this;if(!f)return Promise.reject(new Error("fullscreen not supported"));var i=e(r);if("function"!=typeof i[f.requestFn])return Promise.reject(new Error("fullscreen not supported"));if(a())return Promise.resolve();if(p())return i[f.requestFn](t);var o=".Fullscreen_requestFullscreen";return new Promise(function(e,r){jQuery(i).off(o).one(""+f.errorEvent+o+" "+f.changeEvent+o,function(t){jQuery(n).off(o),t.type===f.errorEvent?r(new Error("unknown fullscreen request error")):e()}),i[f.requestFn](t)})}function o(){var e=this;if(!f||"function"!=typeof document[f.exitFn])return Promise.reject(new TypeError("fullscreen not supported"));if(!a())return Promise.reject(new TypeError("fullscreen mode not active"));if(p())return document[f.exitFn]();var t=".Fullscreen_exitFullscreen";return new Promise(function(r,n){jQuery(document).off(t).one(""+f.errorEvent+t+" "+f.changeEvent+t,function(a){jQuery(e).off(t),a.type===f.errorEvent?n(new Error("unknown fullscreen exit error")):r()}),document[f.exitFn]()})}function s(e,t){return a()?o():i(e,t)}function u(t,r){if(f){var n=e(r);$(n).on(f.changeEvent,t)}}function l(t,r){if(f){var n=e(r);t?$(n).off(f.changeEvent,t):$(n).off(f.changeEvent)}}function c(t,r){if(f){var n=e(r);$(n).on(f.errorEvent,t)}}function d(t,r){if(f){var n=e(r);t?$(n).off(f.errorEvent,t):$(n).off(f.errorEvent)}}var f=function(){try{return Object.freeze([{isEnabled:"fullscreenEnabled",element:"fullscreenElement",requestFn:"requestFullscreen",exitFn:"exitFullscreen",changeEvent:"fullscreenchange",errorEvent:"fullscreenerror"},{isEnabled:"webkitFullscreenEnabled",element:"webkitFullscreenElement",requestFn:"webkitRequestFullscreen",exitFn:"webkitExitFullscreen",changeEvent:"webkitfullscreenchange",errorEvent:"webkitfullscreenerror"},{isEnabled:"mozFullScreenEnabled",element:"mozFullScreenElement",requestFn:"mozRequestFullScreen",exitFn:"mozCancelFullScreen",changeEvent:"mozfullscreenchange",errorEvent:"mozfullscreenerror"},{isEnabled:"msFullscreenEnabled",element:"msFullscreenElement",requestFn:"msRequestFullscreen",exitFn:"msExitFullscreen",changeEvent:"MSFullscreenChange",errorEvent:"MSFullscreenError"}].find(function(e){return e.isEnabled in document}))}catch(e){}return undefined}(),p=function(){function e(){if(null!==t)return t;if(t=!1,f)try{var e=document.exitFullscreen();e.catch(function(){}),t=e instanceof Promise}catch(e){}return t}var t=null;return e}();return Object.freeze(Object.defineProperties({},{vendor:{get:t},element:{get:r},isEnabled:{value:n},isFullscreen:{value:a},request:{value:i},exit:{value:o},toggle:{value:s},onChange:{value:u},offChange:{value:l},onError:{value:c},offError:{value:d}}))}(),_ref3=function(){function e(e){for(var t=e.cloneNode(!0),r=document.createDocumentFragment(),n=void 0;null!==(n=t.firstChild);){if(n.nodeType===Node.ELEMENT_NODE)switch(n.nodeName.toUpperCase()){case"BR":case"DIV":case"P":r.appendChild(document.createTextNode(" "))}r.appendChild(n)}return r.textContent}function t(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)return e;if(e instanceof String)return String(e);if(e instanceof Number)return Number(e);if(e instanceof Boolean)return Boolean(e)
